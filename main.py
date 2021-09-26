@@ -33,8 +33,8 @@ class WoolyStore(object):
         self.dMonFri = dMonFri # demand for Monday - Friday, will be gotten by csv file
         self.dSat = dSat # same as above
         self.name = name # store will have a name so we know what demand to give etc
-        self.arcs_in = [] # arcs into stores with times, makes easier for
-        self.arcs_out = []
+        self.arcs_in = [] # times to self store from other stores
+        self.arcs_out = [] # times from self store to other stores
         
     def __repr__(self):
         return "{}".format(self.dMonFri)
@@ -55,6 +55,62 @@ class Arc(object):
         else:
             from_nd = self.from_store.name
         return "arc: {}->{}".format(from_nd, to_nd)
+
+class Network(object):
+    """ Basic network class.
+    """
+    def __init__(self):
+        self.nodes = []
+        self.arcs = []
+	
+    def __repr__(self):
+        return ("ntwk(" + ''.join([len(self.nodes)*'{},'])[:-1]+")").format(*[nd.name for nd in self.nodes])
+
+    def add_node(self, dMonFri, dSat, name):
+        """ Adds a Node with NAME and VALUE to the network.
+        """
+        # check node names are unique
+        network_names = [nd.name for nd in self.nodes]
+        if name in network_names:
+            print("Node with name already exists")
+		
+		# new node, assign values, append to list
+        node = WoolyStore()
+        
+        node.dMonFri = dMonFri
+        node.dSat = dSat
+        node.name = name
+
+        self.nodes.append(node)
+
+    def join_nodes(self, node_from, node_to, weight):
+        """ Adds an Arc joining NODE_FROM to NODE_TO with WEIGHT.
+        """
+        # new arc
+        arc = Arc()
+        arc.weight = weight
+        arc.to_node = node_to
+        arc.from_node = node_from
+        # append to list
+        self.arcs.append(arc)
+
+		# make sure nodes know about arcs
+        node_to.arcs_in.append(arc)
+        node_from.arcs_out.append(arc)
+    def read_network(self):
+        """ Read data from FILENAME and construct the network.
+        """
+        # will need to add implementation of this
+    def get_node(self, name):
+        """ Loops through the list of nodes and returns the one with NAME.
+		
+			Raises NetworkError if node does not exist.
+		"""
+        for node in self.nodes:
+            if node.name == name:
+                return node
+        print("No node exists like this")
+
 
 if __name__ == "__main__":
 	 main()
