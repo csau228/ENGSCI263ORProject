@@ -11,7 +11,6 @@ def PlotStores():
     df = pd.read_csv("WoolworthsLocations.csv")
     BBox = (df.Long.min(),   df.Long.max(),     
          df.Lat.min(), df.Lat.max())
-    print(BBox)
     map = plt.imread("screenshot (126).png")
     fig, ax = plt.subplots(figsize = (8,7))
     ax.scatter(df.Long[0:55], df.Lat[0:55], zorder=1, alpha = 0.3 ,c='k', s = 20)
@@ -27,8 +26,35 @@ def PlotStores():
     plt.show()
     return
 
+class WoolyStore(object):
+    ''' Class for WoolWorths Store
+    '''
+    def __init__(self, dMonFri, dSat, name):
+        self.dMonFri = dMonFri # demand for Monday - Friday, will be gotten by csv file
+        self.dSat = dSat # same as above
+        self.name = name # store will have a name so we know what demand to give etc
+        self.arcs_in = [] # arcs into stores with times, makes easier for
+        self.arcs_out = []
+        
+    def __repr__(self):
+        return "{}".format(self.dMonFri)
 
+class Arc(object):
+    def __init__(self):
+        self.time = None
+        self.to_store = None
+        self.from_store = None
 
+    def __repr__(self):
+        if self.to_store is None:
+            to_nd = 'None'
+        else:
+            to_nd = self.to_node.name
+        if self.from_store is None:
+            from_nd = 'None'
+        else:
+            from_nd = self.from_store.name
+        return "arc: {}->{}".format(from_nd, to_nd)
 
 if __name__ == "__main__":
 	 main()
