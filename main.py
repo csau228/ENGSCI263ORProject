@@ -32,8 +32,12 @@ def PlotStores():
     ax.imshow(map, zorder=0, extent = BBox, aspect= 'equal')
     plt.show()
 
-    test = Network()
-    test.read_network()
+    regions = ["SR1", "SR2", "SR3", "SR4", "SR5"]
+    zones = []
+    for region in regions:
+        test = Network()
+        test.read_network(region)
+        zones.append(test)
     print(1)
     return
 
@@ -111,7 +115,7 @@ class Network(object):
         node_to.arcs_in.append(arc)
         node_from.arcs_out.append(arc)
 
-    def read_network(self):
+    def read_network(self, region):
         """ Read data from FILENAME and construct the network.
         """
         demands = pd.read_csv("AverageDemands.csv")
@@ -119,13 +123,21 @@ class Network(object):
         self.add_node(0,0,"Distribution Centre Auckland", "All")
         for i in range(len(demands)):
             p = demands.iloc[i]
-            self.add_node(np.ceil(p["Mon to Fri"]), np.ceil(p["Sat"]), p["Average Demands"], p["Zone"])
+            if p["Zone"] == region:
+                self.add_node(np.ceil(p["Mon to Fri"]), np.ceil(p["Sat"]), p["Average Demands"], p["Zone"])
+
         names = travels["Unnamed: 0"]
         for i in range(len(travels)):
-            from_store = self.get_node(names.loc[i])
+            try:
+                from_store = self.get_node(names.loc[i])
+            except ValueError:
+                    continue
             row = travels.loc[i]
             for j in range(len(travels)):
-                to_store = self.get_node(names.loc[j])
+                try:
+                    to_store = self.get_node(names.loc[j])
+                except ValueError:
+                    continue
                 time = row[names.loc[j]]
                 self.join_nodes(from_store, to_store, time)
         
@@ -137,7 +149,7 @@ class Network(object):
         for node in self.nodes:
             if node.name == name:
                 return node
-        print("No node exists like this")
+        raise ValueError("Node does not exist in network")
 
 
 if __name__ == "__main__":
