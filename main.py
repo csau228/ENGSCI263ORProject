@@ -31,20 +31,25 @@ def PlotStores():
     ax.set_ylim(BBox[2],BBox[3])
     ax.imshow(map, zorder=0, extent = BBox, aspect= 'equal')
     plt.show()
+
+    test = Network()
+    test.read_network()
+    print(1)
     return
 
 class WoolyStore(object):
     ''' Class for WoolWorths Store
     '''
-    def __init__(self, dMonFri, dSat, name):
+    def __init__(self, dMonFri, dSat, name, region):
         self.dMonFri = dMonFri # demand for Monday - Friday, will be gotten by csv file
         self.dSat = dSat # same as above
         self.name = name # store will have a name so we know what demand to give etc
+        self.region = region
         self.arcs_in = [] # times to self store from other stores
         self.arcs_out = [] # times from self store to other stores
         
     def __repr__(self):
-        return "{}".format(self.dMonFri)
+        return "{}".format(self.name)
 
 class Arc(object):
     def __init__(self):
@@ -73,7 +78,7 @@ class Network(object):
     def __repr__(self):
         return ("ntwk(" + ''.join([len(self.nodes)*'{},'])[:-1]+")").format(*[nd.name for nd in self.nodes])
 
-    def add_node(self, dMonFri, dSat, name):
+    def add_node(self, dMonFri, dSat, name, region):
         """ Adds a Node with NAME and VALUE to the network.
         """
         # check node names are unique
@@ -82,11 +87,12 @@ class Network(object):
             print("Node with name already exists")
 		
 		# new node, assign values, append to list
-        node = WoolyStore()
+        node = WoolyStore(dMonFri, dSat, name, region)
         
         node.dMonFri = dMonFri
         node.dSat = dSat
         node.name = name
+        node.region = region
 
         self.nodes.append(node)
 
@@ -95,19 +101,34 @@ class Network(object):
         """
         # new arc
         arc = Arc()
-        arc.weight = weight
-        arc.to_node = node_to
-        arc.from_node = node_from
+        arc.time = weight
+        arc.to_store = node_to
+        arc.from_store = node_from
         # append to list
         self.arcs.append(arc)
 
 		# make sure nodes know about arcs
         node_to.arcs_in.append(arc)
         node_from.arcs_out.append(arc)
+
     def read_network(self):
         """ Read data from FILENAME and construct the network.
         """
-        # will need to add implementation of this
+        demands = pd.read_csv("AverageDemands.csv")
+        travels = pd.read_csv("WoolworthsTravelDurations.csv")
+        self.add_node(0,0,"Distribution Centre Auckland", "All")
+        for i in range(len(demands)):
+            p = demands.iloc[i]
+            self.add_node(np.ceil(p["Mon to Fri"]), np.ceil(p["Sat"]), p["Average Demands"], p["Zone"])
+        names = travels["Unnamed: 0"]
+        for i in range(len(travels)):
+            from_store = self.get_node(names.loc[i])
+            row = travels.loc[i]
+            for j in range(len(travels)):
+                to_store = self.get_node(names.loc[j])
+                time = row[names.loc[j]]
+                self.join_nodes(from_store, to_store, time)
+        
     def get_node(self, name):
         """ Loops through the list of nodes and returns the one with NAME.
 		
