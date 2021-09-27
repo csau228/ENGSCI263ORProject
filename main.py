@@ -21,7 +21,10 @@ def PlotStores():
     df2 = pd.read_csv("WoolworthsDemands+Average.csv")
     demands = df2["Mon to Fri"].values
     for i in range(65):
-        plt.annotate(demands[i], (df.Long[i], df.Lat[i]), size=5)
+        if i > 54:
+            plt.annotate(demands[i], (df.Long[i+1], df.Lat[i+1]), size=5)
+        else:
+            plt.annotate(demands[i], (df.Long[i], df.Lat[i]), size=5)
 
     ax.set_title('Plotting Stores')
     ax.set_xlim(BBox[0],BBox[1])
