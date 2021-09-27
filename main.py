@@ -18,6 +18,10 @@ def PlotStores():
     ax.scatter(df.Long[56:61], df.Lat[56:61], zorder=1, alpha = 0.3 ,c='m', s = 20)
     ax.scatter(df.Long[61::], df.Lat[61::], zorder=1, alpha = 0.3 ,c='b', s = 20)
 
+    df2 = pd.read_csv("WoolworthsDemands+Average.csv")
+    demands = df2["Mon to Fri"].values
+    for i in range(65):
+        plt.annotate(demands[i], (df.Long[i], df.Lat[i]), size=5)
 
     ax.set_title('Plotting Stores')
     ax.set_xlim(BBox[0],BBox[1])
