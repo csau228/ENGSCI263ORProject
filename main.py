@@ -7,8 +7,13 @@ def main():
     PlotStores()
 
     zones = CreateNetwork()
-
-    routes = CheapestInsertion(zones[0])
+    rMF = []
+    rS = []
+    for zone in zones:
+        MonFri, Sat = CheapestInsertion(zone)
+        rMF.append(MonFri)
+        rS.append(Sat)
+    print(1)
     return
 
 def CreateNetwork():
@@ -54,14 +59,17 @@ def CheapestInsertion(network):
     partial_soln = []
     partial_soln.append(network.nodes[0])
     partial_soln.append(network.nodes[0])
+
+    nodes_used = []
+    nodes_used.append(network.nodes[0])
     
-    while len(partial_soln) != len(network.nodes):
+    while len(nodes_used) != len(network.nodes):
 
         min = np.Inf
 
-        for insert in network.nodes:
-
-            if insert not in partial_soln:
+        for i in range(len(network.nodes)):
+            insert = network.nodes[i]
+            if (insert not in partial_soln) and (insert not in nodes_used):
 
                 for i in range(len(partial_soln) - 1):
                     # does every interval pair i.e. 0 1, 1 2, 2 3
@@ -85,13 +93,77 @@ def CheapestInsertion(network):
                                         min = time1 + time2
                                         place = i + 1
                                         to_insert = insert
-        
-        partial_soln.insert(place, to_insert)
-        old = partial_soln.copy()
-        routes.append(old)
-                
-            
-    return routes
+        z = 0
+        for node in partial_soln:
+            z += node.dMonFri
+        if z + (to_insert.dMonFri)> 30:
+            partial_soln = [network.nodes[0], network.nodes[0]] # resetting starting condition
+            i = 0
+        else:
+            partial_soln.insert(place, to_insert)
+            nodes_used.append(to_insert)
+            old = partial_soln.copy()
+            routes.append(old)
+    
+
+    to_use = []
+    for node in network.nodes:
+        if node.dSat != 0:
+            to_use.append(node)
+
+    routes2 = []
+    partial_soln2 = []
+    partial_soln2.append(network.nodes[0])
+    partial_soln2.append(network.nodes[0])
+
+    nodes_used2 = []
+    nodes_used2.append(network.nodes[0])
+    
+    while len(nodes_used2) != (len(to_use) + 1):
+
+        min = np.Inf
+
+        for i in range(len(to_use)):
+
+            insert = to_use[i]
+
+            if (insert not in partial_soln2) and (insert not in nodes_used2):
+
+                for i in range(len(partial_soln2) - 1):
+                    # does every interval pair i.e. 0 1, 1 2, 2 3
+                    node_i = partial_soln2[i]
+                    node_j = partial_soln2[i + 1]
+
+                    for arc_i in node_i.arcs_out:
+
+                        if arc_i.to_store == insert:
+
+                            time1 = arc_i.time
+
+                            for arc_j in insert.arcs_out:
+
+                                if arc_j.to_store == node_j:
+
+                                    time2 = arc_j.time
+
+                                    if (time1 + time2 < min):
+
+                                        min = time1 + time2
+                                        place = i + 1
+                                        to_insert = insert
+        z = 0
+        for node in partial_soln2:
+            z += node.dSat
+        if z + (to_insert.dSat)> 30:
+            partial_soln2= [network.nodes[0], network.nodes[0]] # resetting starting condition
+            i = 0
+        else:
+            partial_soln2.insert(place, to_insert)
+            nodes_used2.append(to_insert)
+            old = partial_soln2.copy()
+            routes2.append(old)
+
+    return routes, routes2
     
 class WoolyStore(object):
     ''' Class for WoolWorths Store
