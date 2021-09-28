@@ -8,7 +8,7 @@ def main():
 
     zones = CreateNetwork()
 
-    CheapestInsertion(zones[0])
+    routes = CheapestInsertion(zones[0])
     return
 
 def CreateNetwork():
@@ -49,34 +49,46 @@ def PlotStores():
     return
 
 def CheapestInsertion(network):
-
+    routes = []
     partial_soln = []
     partial_soln.append(network.nodes[0])
     partial_soln.append(network.nodes[0])
-    partial_soln.insert(1, 2)
-    start = network.nodes[0]
-    second = start
-    # doing starting sub tour
     min = np.Inf
+    while len(partial_soln) != len(network.nodes):
 
-    for arc in start.arcs_out:
-        # find cheapest sub tour
-        to_node = arc.to_store
-        val1 = arc.time
-        for arcs in to_node.arcs_out:
-            if arcs.to_store == start:
-                val2 = arcs.time
-                if (val1 + val2 < min) and (min != 0):
-                    min = val1 + val2
-                    second = to_node
+        min = np.Inf
 
-    partial_soln.append(second)
-    # theres two cases, either insert in location after start or before end
-    for node in network.nodes:
-        if node not in partial_soln:
-            print(node)
+        for insert in network.nodes:
+
+            if insert not in partial_soln:
+
+                for i in range(len(partial_soln) - 1):
+                    # does every interval pair i.e. 0 1, 1 2, 2 3
+                    node_i = partial_soln[i]
+                    node_j = partial_soln[i + 1]
+
+                    for arc_i in node_i.arcs_out:
+
+                        if arc_i.to_store == insert:
+
+                            time1 = arc_i.time
+
+                            for arc_j in insert.arcs_out:
+
+                                if arc_j.to_store == node_j:
+
+                                    time2 = arc_j.time
+
+                                    if (time1 + time2 < min):
+
+                                        min = time1 + time2
+                                        place = i + 1
+                                        to_insert = insert
+        
+        partial_soln.insert(place, to_insert)
+                
             
-    return
+    return routes
     
 class WoolyStore(object):
     ''' Class for WoolWorths Store
