@@ -5,7 +5,20 @@ import matplotlib.pyplot as plt
 
 def main():
     PlotStores()
+
+    zones = CreateNetwork()
+
+    CheapestInsertion(zones[0])
     return
+
+def CreateNetwork():
+    regions = ["SR1", "SR2", "SR3", "SR4", "SR5"]
+    zones = []
+    for region in regions:
+        test = Network()
+        test.read_network(region)
+        zones.append(test)
+    return zones
 
 def PlotStores():
     df = pd.read_csv("WoolworthsLocations.csv")
@@ -32,13 +45,32 @@ def PlotStores():
     ax.imshow(map, zorder=0, extent = BBox, aspect= 'equal')
     plt.show()
 
-    regions = ["SR1", "SR2", "SR3", "SR4", "SR5"]
-    zones = []
-    for region in regions:
-        test = Network()
-        test.read_network(region)
-        zones.append(test)
-    print(1)
+   
+    return
+
+def CheapestInsertion(network):
+
+    partial_soln = []
+    partial_soln.append(network.nodes[0])
+    start = network.nodes[0]
+    second = start
+    # doing starting sub tour
+    min = np.Inf
+
+    for arc in start.arcs_out:
+        # find cheapest sub tour
+        to_node = arc.to_store
+        val1 = arc.time
+        for arcs in to_node.arcs_out:
+            if arcs.to_store == start:
+                val2 = arcs.time
+                if (val1 + val2 < min) and (min != 0):
+                    min = val1 + val2
+                    second = to_node
+
+    for node in network.nodes:
+        if node not in partial_soln:
+            print(node)
     return
 
 class WoolyStore(object):
@@ -65,7 +97,7 @@ class Arc(object):
         if self.to_store is None:
             to_nd = 'None'
         else:
-            to_nd = self.to_node.name
+            to_nd = self.to_store.name
         if self.from_store is None:
             from_nd = 'None'
         else:
@@ -139,6 +171,8 @@ class Network(object):
                 except ValueError:
                     continue
                 time = row[names.loc[j]]
+                if(from_store == to_store):
+                    continue
                 self.join_nodes(from_store, to_store, time)
         
     def get_node(self, name):
@@ -150,6 +184,7 @@ class Network(object):
             if node.name == name:
                 return node
         raise ValueError("Node does not exist in network")
+
 
 
 if __name__ == "__main__":
