@@ -49,11 +49,12 @@ def PlotStores():
     return
 
 def CheapestInsertion(network):
+
     routes = []
     partial_soln = []
     partial_soln.append(network.nodes[0])
     partial_soln.append(network.nodes[0])
-    min = np.Inf
+    
     while len(partial_soln) != len(network.nodes):
 
         min = np.Inf
@@ -86,6 +87,8 @@ def CheapestInsertion(network):
                                         to_insert = insert
         
         partial_soln.insert(place, to_insert)
+        old = partial_soln.copy()
+        routes.append(old)
                 
             
     return routes
