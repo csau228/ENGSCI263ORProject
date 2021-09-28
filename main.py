@@ -52,6 +52,8 @@ def CheapestInsertion(network):
 
     partial_soln = []
     partial_soln.append(network.nodes[0])
+    partial_soln.append(network.nodes[0])
+    partial_soln.insert(1, 2)
     start = network.nodes[0]
     second = start
     # doing starting sub tour
@@ -68,11 +70,14 @@ def CheapestInsertion(network):
                     min = val1 + val2
                     second = to_node
 
+    partial_soln.append(second)
+    # theres two cases, either insert in location after start or before end
     for node in network.nodes:
         if node not in partial_soln:
             print(node)
+            
     return
-
+    
 class WoolyStore(object):
     ''' Class for WoolWorths Store
     '''
