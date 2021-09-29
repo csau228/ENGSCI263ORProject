@@ -1,4 +1,4 @@
-﻿Average Demand,Mon to Fri,Sat,Zone
+﻿Average Demands,Mon to Fri,Sat,Zone
 Store1,4,0,SR1
 Store2,7,5,SR1
 Store3,9,6,SR1
@@ -7,5 +7,3 @@ Store5,8,5,SR1
 Store6,5,0,SR1
 Store7,6,3,SR1
 Store8,8,5,SR1
-Store9,8,6,SR1
-Store10,3,0,SR1
