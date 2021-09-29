@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def main():
     PlotStores()
 
-    zones = CreateNetwork("AverageDemands.csv")
+    zones = CreateNetwork("AverageDemands.csv", "WoolworthsTravelDurations.csv")
     rMF = []
     rS = []
     for zone in zones:
@@ -14,9 +14,16 @@ def main():
         rMF.append(MonFri)
         rS.append(Sat)
     
+    zo = CreateNetwork("TestSet.csv", "TestSet_Travel_Duration.csv")
+    rMF = []
+    rS = []
+    for zone in zo:
+        MonFri, Sat = CheapestInsertion(zone)
+        rMF.append(MonFri)
+        rS.append(Sat)
     return
 
-def CreateNetwork(filename):
+def CreateNetwork(filename, travelfile):
     df = pd.read_csv(filename)
     regions_to_read = df.Zone
     regions = []
@@ -27,7 +34,7 @@ def CreateNetwork(filename):
     zones = []
     for region in regions:
         test = Network()
-        test.read_network(region)
+        test.read_network(region, filename, travelfile)
         zones.append(test)
     return zones
 
