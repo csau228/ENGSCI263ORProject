@@ -245,11 +245,11 @@ class Network(object):
         node_to.arcs_in.append(arc)
         node_from.arcs_out.append(arc)
 
-    def read_network(self, region):
+    def read_network(self, region, demandfile, travelfile):
         """ Read data from FILENAME and construct the network.
         """
-        demands = pd.read_csv("AverageDemands.csv")
-        travels = pd.read_csv("WoolworthsTravelDurations.csv")
+        demands = pd.read_csv(demandfile)
+        travels = pd.read_csv(travelfile)
         self.add_node(0,0,"Distribution Centre Auckland", "All")
         for i in range(len(demands)):
             p = demands.iloc[i]
