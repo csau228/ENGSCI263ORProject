@@ -6,18 +6,24 @@ import matplotlib.pyplot as plt
 def main():
     PlotStores()
 
-    zones = CreateNetwork()
+    zones = CreateNetwork("AverageDemands.csv")
     rMF = []
     rS = []
     for zone in zones:
         MonFri, Sat = CheapestInsertion(zone)
         rMF.append(MonFri)
         rS.append(Sat)
-    print(1)
+    
     return
 
-def CreateNetwork():
-    regions = ["SR1", "SR2", "SR3", "SR4", "SR5"]
+def CreateNetwork(filename):
+    df = pd.read_csv(filename)
+    regions_to_read = df.Zone
+    regions = []
+    for i in range(len(regions_to_read)):
+        z = regions_to_read.iloc[i]
+        if z not in regions:
+            regions.append(z)
     zones = []
     for region in regions:
         test = Network()
