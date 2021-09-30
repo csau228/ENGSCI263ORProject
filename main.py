@@ -2,26 +2,41 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import itertools
 
 def main():
     PlotStores()
 
+    total = []
+    tutal = []
     zones = CreateNetwork("AverageDemands.csv", "WoolworthsTravelDurations.csv")
-    rMF = []
-    rS = []
     for zone in zones:
-        MonFri, Sat = CheapestInsertion(zone)
-        rMF.append(MonFri)
-        rS.append(Sat)
-    
-    zo = CreateNetwork("TestSet.csv", "TestSet_Travel_Duration.csv")
-    rMF = []
-    rS = []
-    for zone in zo:
-        MonFri, Sat = CheapestInsertion(zone)
-        rMF.append(MonFri)
-        rS.append(Sat)
+        one, two = CreateNodeSets(zone)
+        tone = TrimTours(one)
+        ttwo = TrimTours(two)
+        total.append(tone)
+        tutal.append(ttwo)
     return
+
+def TrimTours(array):
+    trimmed = []
+    for tour in array:
+
+        time = 0
+        
+        for i in range(len(tour) - 1):
+            
+            time += tour[i].dMonFri * 7.5
+            
+            for arc in tour[i].arcs_out:
+                
+                if arc.to_store == tour[i + 1]:
+                    
+                    time += (arc.time / 60)
+
+        if time < 240:
+            trimmed.append(tour)
+    return trimmed
 
 def CreateNetwork(filename, travelfile):
     df = pd.read_csv(filename)
@@ -66,117 +81,49 @@ def PlotStores():
    
     return
 
-def CheapestInsertion(network):
+def CreateNodeSets(network):
+    possible = network.nodes[1::]
+    sets = []
+    for L in range(2, len(possible) + 1):
+        for subset in itertools.combinations(possible, L):
+            demand = 0
+            for node in subset:
+                demand += node.dMonFri
+            if demand <= 26:
+                sets.append(subset)
 
-    routes = []
-    partial_soln = []
-    partial_soln.append(network.nodes[0])
-    partial_soln.append(network.nodes[0])
+    poss_tour = []
+    for set in sets:
+        start = [network.nodes[0]]
+        for node in set:
+            start.append(node)
+        start.append(network.nodes[0])
+        poss_tour.append(start)
+        
+    sets2 = []
+    for L in range(2, len(possible) + 1):
+        for subset in itertools.combinations(possible, L):
+            sat = True
+            for node in subset:
+                if (node.dSat == 0):
+                    sat = False
+            if sat is True:
+                demand = 0
+                
+                for node in subset:
+                    demand += node.dSat
+                if demand <= 26:
+                    sets2.append(subset)
 
-    nodes_used = []
-    nodes_used.append(network.nodes[0])
-    
-    while len(nodes_used) != len(network.nodes):
+    poss_tour2 = []
+    for set in sets2:
+        start = [network.nodes[0]]
+        for node in set:
+            start.append(node)
+        start.append(network.nodes[0])
+        poss_tour2.append(start)
 
-        min = np.Inf
-
-        for i in range(len(network.nodes)):
-            insert = network.nodes[i]
-            if (insert not in partial_soln) and (insert not in nodes_used):
-
-                for i in range(len(partial_soln) - 1):
-                    # does every interval pair i.e. 0 1, 1 2, 2 3
-                    node_i = partial_soln[i]
-                    node_j = partial_soln[i + 1]
-
-                    for arc_i in node_i.arcs_out:
-
-                        if arc_i.to_store == insert:
-
-                            time1 = arc_i.time
-
-                            for arc_j in insert.arcs_out:
-
-                                if arc_j.to_store == node_j:
-
-                                    time2 = arc_j.time
-
-                                    if (time1 + time2 < min):
-
-                                        min = time1 + time2
-                                        place = i + 1
-                                        to_insert = insert
-        z = 0
-        for node in partial_soln:
-            z += node.dMonFri
-        if z + (to_insert.dMonFri) > 26:
-            partial_soln = [network.nodes[0], network.nodes[0]] # resetting starting condition
-            i = 0
-        else:
-            partial_soln.insert(place, to_insert)
-            nodes_used.append(to_insert)
-            old = partial_soln.copy()
-            routes.append(old)
-    
-
-    to_use = []
-    for node in network.nodes:
-        if node.dSat != 0:
-            to_use.append(node)
-
-    routes2 = []
-    partial_soln2 = []
-    partial_soln2.append(network.nodes[0])
-    partial_soln2.append(network.nodes[0])
-
-    nodes_used2 = []
-    nodes_used2.append(network.nodes[0])
-    
-    while len(nodes_used2) != (len(to_use) + 1):
-
-        min = np.Inf
-
-        for i in range(len(to_use)):
-
-            insert = to_use[i]
-
-            if (insert not in partial_soln2) and (insert not in nodes_used2):
-
-                for i in range(len(partial_soln2) - 1):
-                    # does every interval pair i.e. 0 1, 1 2, 2 3
-                    node_i = partial_soln2[i]
-                    node_j = partial_soln2[i + 1]
-
-                    for arc_i in node_i.arcs_out:
-
-                        if arc_i.to_store == insert:
-
-                            time1 = arc_i.time
-
-                            for arc_j in insert.arcs_out:
-
-                                if arc_j.to_store == node_j:
-
-                                    time2 = arc_j.time
-
-                                    if (time1 + time2 < min):
-
-                                        min = time1 + time2
-                                        place = i + 1
-                                        to_insert = insert
-        z = 0
-        for node in partial_soln2:
-            z += node.dSat
-        if z + (to_insert.dSat) > 26:
-            partial_soln2= [network.nodes[0], network.nodes[0]] # resetting starting condition
-            i = 0
-        else:
-            partial_soln2.insert(place, to_insert)
-            nodes_used2.append(to_insert)
-            old = partial_soln2.copy()
-            routes2.append(old)
-
-    return routes, routes2
+    return poss_tour, poss_tour2
     
 class WoolyStore(object):
     ''' Class for WoolWorths Store
