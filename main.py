@@ -16,6 +16,48 @@ def main():
         ttwo = TrimTours(two)
         total.append(tone)
         tutal.append(ttwo)
+    
+    WriteToFile(total,tutal)
+    return
+
+def WriteToFile(Mon, Sat):
+    file = open('RoutesMon.txt', 'w')
+    file.write("Route, Time [min] \n")
+    for zone in Mon:
+        file.write(zone[0][1].region + "\n")
+        for route in zone:
+            string = ""
+            time = 0
+            for i in range(len(route) - 1):
+
+                string += (route[i].name + "--")
+                time += (route[i].dMonFri * 7.5)
+
+                for arc in route[i].arcs_out:
+                    if arc.to_store == route[i + 1]:
+                        time += (arc.time / 60)
+            string += route[-1].name
+            file.write(string + ", " + str(time) + "\n")
+    file.close()
+
+    file = open('RoutesSat.txt', 'w')
+    file.write("Route, Time [min] \n")
+    for zone in Sat:
+        file.write(zone[0][1].region + "\n")
+        for route in zone:
+            string = ""
+            time = 0
+            for i in range(len(route) - 1):
+
+                string += (route[i].name + "--")
+                time += (route[i].dSat * 7.5)
+
+                for arc in route[i].arcs_out:
+                    if arc.to_store == route[i + 1]:
+                        time += (arc.time / 60)
+            string += route[-1].name
+            file.write(string + ", " + str(time) + "\n")
+    file.close()
     return
 
 def TrimTours(array):

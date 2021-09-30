@@ -1,0 +1,276 @@
+Route, Time [min] 
+SR1
+Distribution Centre Auckland--Countdown Airport--Countdown Mangere East--Distribution Centre Auckland, 103.78366666666668
+Distribution Centre Auckland--Countdown Airport--Countdown Mangere Mall--Distribution Centre Auckland, 99.48316666666666
+Distribution Centre Auckland--Countdown Airport--Countdown Manukau--Distribution Centre Auckland, 139.91299999999998
+Distribution Centre Auckland--Countdown Airport--Countdown Manukau Mall--Distribution Centre Auckland, 121.43266666666666
+Distribution Centre Auckland--Countdown Airport--Countdown Manurewa--Distribution Centre Auckland, 122.93233333333333
+Distribution Centre Auckland--Countdown Airport--Countdown Papakura--Distribution Centre Auckland, 156.82283333333334
+Distribution Centre Auckland--Countdown Airport--Countdown Papatoetoe--Distribution Centre Auckland, 108.388
+Distribution Centre Auckland--Countdown Airport--Countdown Roselands--Distribution Centre Auckland, 155.03166666666667
+Distribution Centre Auckland--Countdown Airport--Countdown Takanini--Distribution Centre Auckland, 146.269
+Distribution Centre Auckland--Countdown Mangere East--Countdown Mangere Mall--Distribution Centre Auckland, 79.91283333333332
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manukau--Distribution Centre Auckland, 116.97999999999999
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manukau Mall--Distribution Centre Auckland, 98.35983333333333
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manurewa--Distribution Centre Auckland, 101.10233333333333
+Distribution Centre Auckland--Countdown Mangere East--Countdown Papakura--Distribution Centre Auckland, 133.75
+Distribution Centre Auckland--Countdown Mangere East--Countdown Papatoetoe--Distribution Centre Auckland, 83.52600000000001
+Distribution Centre Auckland--Countdown Mangere East--Countdown Roselands--Distribution Centre Auckland, 131.959
+Distribution Centre Auckland--Countdown Mangere East--Countdown Takanini--Distribution Centre Auckland, 123.19633333333333
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manukau--Distribution Centre Auckland, 118.73433333333332
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manukau Mall--Distribution Centre Auckland, 100.11416666666666
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manurewa--Distribution Centre Auckland, 102.85666666666667
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Papakura--Distribution Centre Auckland, 135.50433333333334
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Papatoetoe--Distribution Centre Auckland, 88.25683333333333
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Roselands--Distribution Centre Auckland, 133.71333333333334
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Takanini--Distribution Centre Auckland, 124.9505
+Distribution Centre Auckland--Countdown Manukau--Countdown Manukau Mall--Distribution Centre Auckland, 115.31233333333333
+Distribution Centre Auckland--Countdown Manukau--Countdown Manurewa--Distribution Centre Auckland, 125.09983333333334
+Distribution Centre Auckland--Countdown Manukau--Countdown Papakura--Distribution Centre Auckland, 154.00766666666667
+Distribution Centre Auckland--Countdown Manukau--Countdown Papatoetoe--Distribution Centre Auckland, 107.67333333333332
+Distribution Centre Auckland--Countdown Manukau--Countdown Roselands--Distribution Centre Auckland, 152.21666666666667
+Distribution Centre Auckland--Countdown Manukau--Countdown Takanini--Distribution Centre Auckland, 143.45383333333334
+Distribution Centre Auckland--Countdown Manukau Mall--Countdown Manurewa--Distribution Centre Auckland, 106.47966666666667
+Distribution Centre Auckland--Countdown Manukau Mall--Countdown Papakura--Distribution Centre Auckland, 135.28733333333332
+Distribution Centre Auckland--Countdown Manukau Mall--Countdown Papatoetoe--Distribution Centre Auckland, 92.34366666666665
+Distribution Centre Auckland--Countdown Manukau Mall--Countdown Roselands--Distribution Centre Auckland, 133.49633333333333
+Distribution Centre Auckland--Countdown Manukau Mall--Countdown Takanini--Distribution Centre Auckland, 124.73366666666666
+Distribution Centre Auckland--Countdown Manurewa--Countdown Papakura--Distribution Centre Auckland, 140.39166666666665
+Distribution Centre Auckland--Countdown Manurewa--Countdown Papatoetoe--Distribution Centre Auckland, 100.33033333333333
+Distribution Centre Auckland--Countdown Manurewa--Countdown Roselands--Distribution Centre Auckland, 137.86316666666667
+Distribution Centre Auckland--Countdown Manurewa--Countdown Takanini--Distribution Centre Auckland, 129.27733333333333
+Distribution Centre Auckland--Countdown Papakura--Countdown Papatoetoe--Distribution Centre Auckland, 128.63383333333334
+Distribution Centre Auckland--Countdown Papakura--Countdown Roselands--Distribution Centre Auckland, 141.33566666666667
+Distribution Centre Auckland--Countdown Papakura--Countdown Takanini--Distribution Centre Auckland, 140.69783333333334
+Distribution Centre Auckland--Countdown Papatoetoe--Countdown Roselands--Distribution Centre Auckland, 128.34866666666667
+Distribution Centre Auckland--Countdown Papatoetoe--Countdown Takanini--Distribution Centre Auckland, 119.586
+Distribution Centre Auckland--Countdown Roselands--Countdown Takanini--Distribution Centre Auckland, 136.85466666666667
+Distribution Centre Auckland--Countdown Airport--Countdown Mangere East--Countdown Mangere Mall--Distribution Centre Auckland, 139.33350000000002
+Distribution Centre Auckland--Countdown Mangere East--Countdown Mangere Mall--Countdown Manukau--Distribution Centre Auckland, 154.10699999999997
+Distribution Centre Auckland--Countdown Mangere East--Countdown Mangere Mall--Countdown Manukau Mall--Distribution Centre Auckland, 135.48683333333332
+Distribution Centre Auckland--Countdown Mangere East--Countdown Mangere Mall--Countdown Manurewa--Distribution Centre Auckland, 138.22933333333333
+Distribution Centre Auckland--Countdown Mangere East--Countdown Mangere Mall--Countdown Papatoetoe--Distribution Centre Auckland, 123.62950000000001
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manukau--Countdown Manukau Mall--Distribution Centre Auckland, 148.01866666666666
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manukau--Countdown Papatoetoe--Distribution Centre Auckland, 140.37966666666665
+Distribution Centre Auckland--Countdown Mangere East--Countdown Manukau Mall--Countdown Papatoetoe--Distribution Centre Auckland, 125.05000000000001
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manukau--Countdown Manukau Mall--Distribution Centre Auckland, 149.77300000000002
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manukau--Countdown Papatoetoe--Distribution Centre Auckland, 142.134
+Distribution Centre Auckland--Countdown Mangere Mall--Countdown Manukau Mall--Countdown Papatoetoe--Distribution Centre Auckland, 126.80433333333335
+Distribution Centre Auckland--Countdown Manukau--Countdown Manukau Mall--Countdown Papatoetoe--Distribution Centre Auckland, 142.0025
+SR5
+Distribution Centre Auckland--Countdown Auckland City--Countdown Greenlane--Distribution Centre Auckland, 127.161
+Distribution Centre Auckland--Countdown Auckland City--Countdown Grey Lynn--Distribution Centre Auckland, 122.61566666666667
+Distribution Centre Auckland--Countdown Auckland City--Countdown Grey Lynn Central--Distribution Centre Auckland, 144.456
+Distribution Centre Auckland--Countdown Auckland City--Countdown Mt Eden--Distribution Centre Auckland, 134.0335
+Distribution Centre Auckland--Countdown Auckland City--Countdown Mt Roskill--Distribution Centre Auckland, 136.3165
+Distribution Centre Auckland--Countdown Auckland City--Countdown Newmarket--Distribution Centre Auckland, 127.991
+Distribution Centre Auckland--Countdown Auckland City--Countdown Onehunga--Distribution Centre Auckland, 125.60549999999999
+Distribution Centre Auckland--Countdown Auckland City--Countdown Ponsonby--Distribution Centre Auckland, 126.40733333333333
+Distribution Centre Auckland--Countdown Auckland City--Countdown Pt Chevalier--Distribution Centre Auckland, 135.85433333333333
+Distribution Centre Auckland--Countdown Auckland City--Countdown St Johns--Distribution Centre Auckland, 138.73333333333335
+Distribution Centre Auckland--Countdown Auckland City--Countdown St Lukes--Distribution Centre Auckland, 118.84083333333334
+Distribution Centre Auckland--Countdown Auckland City--Countdown Three Kings--Distribution Centre Auckland, 122.97833333333332
+Distribution Centre Auckland--Countdown Auckland City--Countdown Victoria Street West--Distribution Centre Auckland, 123.17933333333333
+Distribution Centre Auckland--Countdown Greenlane--Countdown Grey Lynn--Distribution Centre Auckland, 114.582
+Distribution Centre Auckland--Countdown Greenlane--Countdown Grey Lynn Central--Distribution Centre Auckland, 133.97266666666667
+Distribution Centre Auckland--Countdown Greenlane--Countdown Mt Eden--Distribution Centre Auckland, 118.11533333333334
+Distribution Centre Auckland--Countdown Greenlane--Countdown Mt Roskill--Distribution Centre Auckland, 120.21766666666667
+Distribution Centre Auckland--Countdown Greenlane--Countdown Newmarket--Distribution Centre Auckland, 114.18333333333334
+Distribution Centre Auckland--Countdown Greenlane--Countdown Onehunga--Distribution Centre Auckland, 101.27466666666666
+Distribution Centre Auckland--Countdown Greenlane--Countdown Ponsonby--Distribution Centre Auckland, 118.607
+Distribution Centre Auckland--Countdown Greenlane--Countdown Pt Chevalier--Distribution Centre Auckland, 126.1675
+Distribution Centre Auckland--Countdown Greenlane--Countdown St Johns--Distribution Centre Auckland, 124.04133333333334
+Distribution Centre Auckland--Countdown Greenlane--Countdown St Lukes--Distribution Centre Auckland, 109.154
+Distribution Centre Auckland--Countdown Greenlane--Countdown Three Kings--Distribution Centre Auckland, 105.7175
+Distribution Centre Auckland--Countdown Greenlane--Countdown Victoria Street West--Distribution Centre Auckland, 120.36483333333334
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Grey Lynn Central--Distribution Centre Auckland, 122.99600000000001
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Mt Eden--Distribution Centre Auckland, 119.632
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Mt Roskill--Distribution Centre Auckland, 120.07766666666666
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Newmarket--Distribution Centre Auckland, 119.15583333333333
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Onehunga--Distribution Centre Auckland, 112.01333333333334
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Ponsonby--Distribution Centre Auckland, 109.85416666666666
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Pt Chevalier--Distribution Centre Auckland, 120.24566666666666
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown St Johns--Distribution Centre Auckland, 137.1985
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown St Lukes--Distribution Centre Auckland, 103.63550000000001
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Three Kings--Distribution Centre Auckland, 116.21766666666667
+Distribution Centre Auckland--Countdown Grey Lynn--Countdown Victoria Street West--Distribution Centre Auckland, 118.68766666666667
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Mt Eden--Distribution Centre Auckland, 135.63
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Mt Roskill--Distribution Centre Auckland, 136.07566666666665
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Newmarket--Distribution Centre Auckland, 137.5795
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Onehunga--Distribution Centre Auckland, 128.81766666666667
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Ponsonby--Distribution Centre Auckland, 127.957
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Pt Chevalier--Distribution Centre Auckland, 137.72783333333334
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown St Johns--Distribution Centre Auckland, 155.62216666666666
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown St Lukes--Distribution Centre Auckland, 119.63333333333333
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Three Kings--Distribution Centre Auckland, 133.022
+Distribution Centre Auckland--Countdown Grey Lynn Central--Countdown Victoria Street West--Distribution Centre Auckland, 139.48683333333332
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Mt Roskill--Distribution Centre Auckland, 125.22733333333335
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Newmarket--Distribution Centre Auckland, 125.32766666666667
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Onehunga--Distribution Centre Auckland, 116.49766666666667
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Ponsonby--Distribution Centre Auckland, 124.17233333333333
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Pt Chevalier--Distribution Centre Auckland, 132.40516666666667
+Distribution Centre Auckland--Countdown Mt Eden--Countdown St Johns--Distribution Centre Auckland, 144.18533333333335
+Distribution Centre Auckland--Countdown Mt Eden--Countdown St Lukes--Distribution Centre Auckland, 109.61466666666668
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Three Kings--Distribution Centre Auckland, 114.28300000000002
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Victoria Street West--Distribution Centre Auckland, 129.0485
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Newmarket--Distribution Centre Auckland, 128.86566666666667
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Onehunga--Distribution Centre Auckland, 107.776
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Ponsonby--Distribution Centre Auckland, 126.23216666666667
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Pt Chevalier--Distribution Centre Auckland, 128.58983333333333
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown St Johns--Distribution Centre Auckland, 145.26000000000002
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown St Lukes--Distribution Centre Auckland, 105.68383333333334
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Three Kings--Distribution Centre Auckland, 107.92766666666668
+Distribution Centre Auckland--Countdown Mt Roskill--Countdown Victoria Street West--Distribution Centre Auckland, 135.47050000000002
+Distribution Centre Auckland--Countdown Newmarket--Countdown Onehunga--Distribution Centre Auckland, 117.92733333333334
+Distribution Centre Auckland--Countdown Newmarket--Countdown Ponsonby--Distribution Centre Auckland, 120.61566666666667
+Distribution Centre Auckland--Countdown Newmarket--Countdown Pt Chevalier--Distribution Centre Auckland, 128.17616666666666
+Distribution Centre Auckland--Countdown Newmarket--Countdown St Johns--Distribution Centre Auckland, 135.2195
+Distribution Centre Auckland--Countdown Newmarket--Countdown St Lukes--Distribution Centre Auckland, 111.16266666666667
+Distribution Centre Auckland--Countdown Newmarket--Countdown Three Kings--Distribution Centre Auckland, 110.21516666666668
+Distribution Centre Auckland--Countdown Newmarket--Countdown Victoria Street West--Distribution Centre Auckland, 122.37366666666667
+Distribution Centre Auckland--Countdown Onehunga--Countdown Ponsonby--Distribution Centre Auckland, 121.74616666666665
+Distribution Centre Auckland--Countdown Onehunga--Countdown Pt Chevalier--Distribution Centre Auckland, 126.58633333333333
+Distribution Centre Auckland--Countdown Onehunga--Countdown St Johns--Distribution Centre Auckland, 122.27033333333333
+Distribution Centre Auckland--Countdown Onehunga--Countdown St Lukes--Distribution Centre Auckland, 104.80266666666667
+Distribution Centre Auckland--Countdown Onehunga--Countdown Three Kings--Distribution Centre Auckland, 95.99783333333335
+Distribution Centre Auckland--Countdown Onehunga--Countdown Victoria Street West--Distribution Centre Auckland, 127.94733333333333
+Distribution Centre Auckland--Countdown Ponsonby--Countdown Pt Chevalier--Distribution Centre Auckland, 126.36583333333333
+Distribution Centre Auckland--Countdown Ponsonby--Countdown St Johns--Distribution Centre Auckland, 140.31550000000001
+Distribution Centre Auckland--Countdown Ponsonby--Countdown St Lukes--Distribution Centre Auckland, 108.27133333333333
+Distribution Centre Auckland--Countdown Ponsonby--Countdown Three Kings--Distribution Centre Auckland, 117.26016666666666
+Distribution Centre Auckland--Countdown Ponsonby--Countdown Victoria Street West--Distribution Centre Auckland, 122.11749999999999
+Distribution Centre Auckland--Countdown Pt Chevalier--Countdown St Johns--Distribution Centre Auckland, 151.493
+Distribution Centre Auckland--Countdown Pt Chevalier--Countdown St Lukes--Distribution Centre Auckland, 114.94066666666667
+Distribution Centre Auckland--Countdown Pt Chevalier--Countdown Three Kings--Distribution Centre Auckland, 126.5
+Distribution Centre Auckland--Countdown Pt Chevalier--Countdown Victoria Street West--Distribution Centre Auckland, 135.35766666666666
+Distribution Centre Auckland--Countdown St Johns--Countdown St Lukes--Distribution Centre Auckland, 126.02116666666667
+Distribution Centre Auckland--Countdown St Johns--Countdown Three Kings--Distribution Centre Auckland, 124.31383333333335
+Distribution Centre Auckland--Countdown St Johns--Countdown Victoria Street West--Distribution Centre Auckland, 137.232
+Distribution Centre Auckland--Countdown St Lukes--Countdown Three Kings--Distribution Centre Auckland, 98.53416666666666
+Distribution Centre Auckland--Countdown St Lukes--Countdown Victoria Street West--Distribution Centre Auckland, 117.51983333333332
+Distribution Centre Auckland--Countdown Three Kings--Countdown Victoria Street West--Distribution Centre Auckland, 120.87616666666666
+Distribution Centre Auckland--Countdown Mt Eden--Countdown Mt Roskill--Countdown Onehunga--Distribution Centre Auckland, 160.05100000000002
+SR2
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Botany Downs--Distribution Centre Auckland, 123.9135
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Highland Park--Distribution Centre Auckland, 112.65433333333333
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Howick--Distribution Centre Auckland, 130.05233333333334
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Meadowbank--Distribution Centre Auckland, 146.47666666666666
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Meadowlands--Distribution Centre Auckland, 119.01283333333333
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Mt Wellington--Distribution Centre Auckland, 124.01233333333333
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Pakuranga--Distribution Centre Auckland, 122.00283333333333
+Distribution Centre Auckland--Countdown Aviemore Drive--Countdown Sylvia Park--Distribution Centre Auckland, 125.21683333333333
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Highland Park--Distribution Centre Auckland, 116.99783333333333
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Howick--Distribution Centre Auckland, 129.27566666666667
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Meadowbank--Distribution Centre Auckland, 143.57966666666667
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Meadowlands--Distribution Centre Auckland, 113.874
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Mt Wellington--Distribution Centre Auckland, 118.7365
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Pakuranga--Distribution Centre Auckland, 117.9325
+Distribution Centre Auckland--Countdown Botany Downs--Countdown Sylvia Park--Distribution Centre Auckland, 119.94083333333333
+Distribution Centre Auckland--Countdown Highland Park--Countdown Howick--Distribution Centre Auckland, 123.80799999999999
+Distribution Centre Auckland--Countdown Highland Park--Countdown Meadowbank--Distribution Centre Auckland, 140.12916666666666
+Distribution Centre Auckland--Countdown Highland Park--Countdown Meadowlands--Distribution Centre Auckland, 112.42766666666667
+Distribution Centre Auckland--Countdown Highland Park--Countdown Mt Wellington--Distribution Centre Auckland, 117.66483333333333
+Distribution Centre Auckland--Countdown Highland Park--Countdown Pakuranga--Distribution Centre Auckland, 115.65533333333333
+Distribution Centre Auckland--Countdown Highland Park--Countdown Sylvia Park--Distribution Centre Auckland, 118.86916666666666
+Distribution Centre Auckland--Countdown Howick--Countdown Meadowbank--Distribution Centre Auckland, 158.07250000000002
+Distribution Centre Auckland--Countdown Howick--Countdown Meadowlands--Distribution Centre Auckland, 121.37933333333334
+Distribution Centre Auckland--Countdown Howick--Countdown Mt Wellington--Distribution Centre Auckland, 135.60816666666668
+Distribution Centre Auckland--Countdown Howick--Countdown Pakuranga--Distribution Centre Auckland, 133.59866666666667
+Distribution Centre Auckland--Countdown Howick--Countdown Sylvia Park--Distribution Centre Auckland, 136.8125
+Distribution Centre Auckland--Countdown Meadowbank--Countdown Meadowlands--Distribution Centre Auckland, 144.2105
+Distribution Centre Auckland--Countdown Meadowbank--Countdown Mt Wellington--Distribution Centre Auckland, 121.80783333333332
+Distribution Centre Auckland--Countdown Meadowbank--Countdown Pakuranga--Distribution Centre Auckland, 132.34316666666666
+Distribution Centre Auckland--Countdown Meadowbank--Countdown Sylvia Park--Distribution Centre Auckland, 123.193
+Distribution Centre Auckland--Countdown Meadowlands--Countdown Mt Wellington--Distribution Centre Auckland, 119.606
+Distribution Centre Auckland--Countdown Meadowlands--Countdown Pakuranga--Distribution Centre Auckland, 118.80183333333333
+Distribution Centre Auckland--Countdown Meadowlands--Countdown Sylvia Park--Distribution Centre Auckland, 120.81033333333333
+Distribution Centre Auckland--Countdown Mt Wellington--Countdown Pakuranga--Distribution Centre Auckland, 107.6755
+Distribution Centre Auckland--Countdown Mt Wellington--Countdown Sylvia Park--Distribution Centre Auckland, 96.688
+Distribution Centre Auckland--Countdown Pakuranga--Countdown Sylvia Park--Distribution Centre Auckland, 109.96533333333333
+SR4
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Glenfield--Distribution Centre Auckland, 160.70383333333334
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Hauraki Corner--Distribution Centre Auckland, 162.71816666666666
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Mairangi Bay--Distribution Centre Auckland, 169.99066666666667
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Milford--Distribution Centre Auckland, 160.137
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Northcote--Distribution Centre Auckland, 153.33533333333332
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Sunnynook--Distribution Centre Auckland, 160.1035
+Distribution Centre Auckland--Countdown Birkenhead--Countdown Takapuna--Distribution Centre Auckland, 143.466
+Distribution Centre Auckland--Countdown Browns Bay--Countdown Northcote--Distribution Centre Auckland, 185.90616666666668
+Distribution Centre Auckland--Countdown Browns Bay--Countdown Takapuna--Distribution Centre Auckland, 170.62133333333333
+Distribution Centre Auckland--Countdown Glenfield--Countdown Hauraki Corner--Distribution Centre Auckland, 169.14416666666665
+Distribution Centre Auckland--Countdown Glenfield--Countdown Mairangi Bay--Distribution Centre Auckland, 168.15816666666666
+Distribution Centre Auckland--Countdown Glenfield--Countdown Milford--Distribution Centre Auckland, 162.96550000000002
+Distribution Centre Auckland--Countdown Glenfield--Countdown Northcote--Distribution Centre Auckland, 161.94483333333332
+Distribution Centre Auckland--Countdown Glenfield--Countdown Sunnynook--Distribution Centre Auckland, 158.65583333333333
+Distribution Centre Auckland--Countdown Glenfield--Countdown Takapuna--Distribution Centre Auckland, 149.89183333333335
+Distribution Centre Auckland--Countdown Hauraki Corner--Countdown Mairangi Bay--Distribution Centre Auckland, 172.39616666666666
+Distribution Centre Auckland--Countdown Hauraki Corner--Countdown Milford--Distribution Centre Auckland, 155.73416666666665
+Distribution Centre Auckland--Countdown Hauraki Corner--Countdown Northcote--Distribution Centre Auckland, 160.6268333333333
+Distribution Centre Auckland--Countdown Hauraki Corner--Countdown Sunnynook--Distribution Centre Auckland, 162.50900000000001
+Distribution Centre Auckland--Countdown Hauraki Corner--Countdown Takapuna--Distribution Centre Auckland, 141.03483333333332
+Distribution Centre Auckland--Countdown Mairangi Bay--Countdown Milford--Distribution Centre Auckland, 156.58283333333333
+Distribution Centre Auckland--Countdown Mairangi Bay--Countdown Northcote--Distribution Centre Auckland, 166.7605
+Distribution Centre Auckland--Countdown Mairangi Bay--Countdown Sunnynook--Distribution Centre Auckland, 152.80366666666666
+Distribution Centre Auckland--Countdown Mairangi Bay--Countdown Takapuna--Distribution Centre Auckland, 151.47566666666665
+Distribution Centre Auckland--Countdown Milford--Countdown Northcote--Distribution Centre Auckland, 157.859
+Distribution Centre Auckland--Countdown Milford--Countdown Sunnynook--Distribution Centre Auckland, 152.73433333333332
+Distribution Centre Auckland--Countdown Milford--Countdown Takapuna--Distribution Centre Auckland, 138.01166666666666
+Distribution Centre Auckland--Countdown Northcote--Countdown Sunnynook--Distribution Centre Auckland, 155.84133333333335
+Distribution Centre Auckland--Countdown Northcote--Countdown Takapuna--Distribution Centre Auckland, 139.64483333333334
+Distribution Centre Auckland--Countdown Sunnynook--Countdown Takapuna--Distribution Centre Auckland, 141.5885
+SR3
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Distribution Centre Auckland, 136.51116666666667
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Distribution Centre Auckland, 158.5855
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Distribution Centre Auckland, 114.89533333333334
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Distribution Centre Auckland, 135.42316666666667
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Distribution Centre Auckland, 98.3195
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Distribution Centre Auckland, 105.9185
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Distribution Centre Auckland, 138.36700000000002
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu--Distribution Centre Auckland, 129.38183333333333
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu South--Distribution Centre Auckland, 122.17316666666667
+Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Westgate--Distribution Centre Auckland, 148.14333333333332
+Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Distribution Centre Auckland, 176.752
+Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Distribution Centre Auckland, 141.61233333333334
+Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Distribution Centre Auckland, 147.24633333333335
+Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Distribution Centre Auckland, 146.93666666666667
+Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Distribution Centre Auckland, 140.00183333333334
+Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Distribution Centre Auckland, 156.5335
+Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu--Distribution Centre Auckland, 146.88233333333335
+Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu South--Distribution Centre Auckland, 135.95016666666666
+Distribution Centre Auckland--Countdown Henderson--Countdown Westgate--Distribution Centre Auckland, 166.30983333333336
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Distribution Centre Auckland, 171.8611666666667
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Distribution Centre Auckland, 166.19983333333332
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Distribution Centre Auckland, 162.32516666666663
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Distribution Centre Auckland, 164.80516666666665
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Distribution Centre Auckland, 160.85183333333333
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu--Distribution Centre Auckland, 162.82399999999998
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu South--Distribution Centre Auckland, 157.32549999999998
+Distribution Centre Auckland--Countdown Hobsonville--Countdown Westgate--Distribution Centre Auckland, 171.10616666666664
+Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland, 144.5665
+Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland, 122.64533333333333
+Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Distribution Centre Auckland, 121.157
+Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Distribution Centre Auckland, 150.9755
+Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu--Distribution Centre Auckland, 141.32433333333333
+Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland, 130.39216666666667
+Distribution Centre Auckland--Countdown Kelston--Countdown Westgate--Distribution Centre Auckland, 160.7518333333333
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland, 139.16266666666667
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland, 141.64266666666666
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland, 144.58533333333332
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland, 139.66166666666666
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland, 130.94533333333334
+Distribution Centre Auckland--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland, 154.36166666666668
+Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland, 114.11866666666667
+Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland, 141.66649999999998
+Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland, 132.68133333333333
+Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland, 125.47283333333334
+Distribution Centre Auckland--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland, 151.443
+Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland, 143.98149999999998
+Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland, 134.99616666666665
+Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland, 127.78766666666667
+Distribution Centre Auckland--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland, 153.75783333333334
+Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland, 142.6055
+Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland, 137.107
+Distribution Centre Auckland--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland, 144.40800000000002
+Distribution Centre Auckland--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland, 127.111
+Distribution Centre Auckland--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland, 153.64233333333334
+Distribution Centre Auckland--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland, 145.28583333333336
