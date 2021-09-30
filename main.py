@@ -109,7 +109,7 @@ def CheapestInsertion(network):
         z = 0
         for node in partial_soln:
             z += node.dMonFri
-        if z + (to_insert.dMonFri)> 30:
+        if z + (to_insert.dMonFri) > 26:
             partial_soln = [network.nodes[0], network.nodes[0]] # resetting starting condition
             i = 0
         else:
@@ -167,7 +167,7 @@ def CheapestInsertion(network):
         z = 0
         for node in partial_soln2:
             z += node.dSat
-        if z + (to_insert.dSat)> 30:
+        if z + (to_insert.dSat)> 26:
             partial_soln2= [network.nodes[0], network.nodes[0]] # resetting starting condition
             i = 0
         else:
