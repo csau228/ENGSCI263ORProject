@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import itertools
+import csv
 
 def main():
     PlotStores()
@@ -21,10 +22,11 @@ def main():
     return
 
 def WriteToFile(Mon, Sat):
-    file = open('RoutesMon.txt', 'w')
-    file.write("Route, Time [min] \n")
+    file = open('MonFriRoutes.csv', 'w', newline= '')
+    writer = csv.writer(file)
+    header = ["Route", "Time [min]", "Region"]
+    writer.writerow(header)
     for zone in Mon:
-        file.write(zone[0][1].region + "\n")
         for route in zone:
             string = ""
             time = 0
@@ -37,13 +39,14 @@ def WriteToFile(Mon, Sat):
                     if arc.to_store == route[i + 1]:
                         time += (arc.time / 60)
             string += route[-1].name
-            file.write(string + ", " + str(time) + "\n")
+            writer.writerow([string, str(time), route[i].region])
     file.close()
 
-    file = open('RoutesSat.txt', 'w')
-    file.write("Route, Time [min] \n")
+    file = open('SatRoutes.csv', 'w', newline= '')
+    writer = csv.writer(file)
+    header = ["Route", "Time [min]", "Region"]
+    writer.writerow(header)
     for zone in Sat:
-        file.write(zone[0][1].region + "\n")
         for route in zone:
             string = ""
             time = 0
@@ -56,7 +59,7 @@ def WriteToFile(Mon, Sat):
                     if arc.to_store == route[i + 1]:
                         time += (arc.time / 60)
             string += route[-1].name
-            file.write(string + ", " + str(time) + "\n")
+            writer.writerow([string, str(time), route[i].region])
     file.close()
     return
 
@@ -76,7 +79,7 @@ def TrimTours(array):
                     
                     time += (arc.time / 60)
 
-        if time < 240:
+        if time < 360:
             trimmed.append(tour)
     return trimmed
 
