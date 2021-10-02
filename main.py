@@ -32,28 +32,37 @@ def LinearProgram(routefile, nodefile):
     df2 = pd.read_csv(nodefile)
 
     # name LP
-    prob = LpProblem("Woolworths Routing Problem", LpMinimize)
+    prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
 
     # create variables
-    route_vars = LpVariable.dicts("Route", df1.Route, LpBinary)
-
+    routevars = LpVariable.dicts("Route", df1.Route, LpBinary)
     routes = np.array(df1.Route)
+    c_array = df1.Cost.to_numpy()
+    cost = pd.Series(c_array, index = routes)
+
     # objective function of costs, so divide the time by 4 hours and then multiply by rates
-    prob += lpSum(route_vars[index]*(df1["Time [min]"])[index] for index in routes)
+    prob += lpSum([(routevars[index])*(cost)[index] for index in routes])
 
     # constraints
+    matrix = []
     node_routes = []
     # for each node and each route
     for node in df2["Average Demands"]:
-        for route in route_vars:
+        node = ''.join(node.split())
+        for route in routevars:
             # if the route contains the node, add to the node_routes array
-            if route.str.contains(node):
-                node_routes.append(route)
-        # this line should create a constraint for each node that sums the routes which go to that node 
-        prob += lpSum(node_routes[i] for i in df2["Average Demands"]) == 1
+            if node in route:
+                node_routes.append(1)
+            else:
+                node_routes.append(0)
         # reset the node_routes array for the next node
+        matrix.append(node_routes)
         node_routes = []
+    node_array = df2["Average Demands"].to_numpy()
+    nodepatterns = makeDict([node_array, routes], matrix, 0)
 
+    for i in node_array:
+        prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
     return
 
 
@@ -68,7 +77,7 @@ def WriteToFile(Mon, Sat):
             time = 0
             for i in range(len(route) - 1):
 
-                string += (route[i].name + "--")
+                string += (route[i].name)
                 time += (route[i].dMonFri * 7.5)
 
                 for arc in route[i].arcs_out:
@@ -81,6 +90,7 @@ def WriteToFile(Mon, Sat):
             else:
                 extra = cost_ - 4
                 cost = extra*275 + ((cost_ - extra)*225)
+            string = ''.join(string.split())
             writer.writerow([string, str(cost), route[i].region])
     file.close()
 
@@ -121,7 +131,7 @@ def TrimTours(array):
                     
                     time += (arc.time / 60)
 
-        if time < 360:
+        if time < 240:
             trimmed.append(tour)
     return trimmed
 
