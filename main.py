@@ -38,7 +38,7 @@ def LinearProgram(routefile, nodefile):
     route_vars = LpVariable.dicts("Route", df1.Route, LpBinary)
 
     routes = np.array(df1.Route)
-    # objective function
+    # objective function of costs, so divide the time by 4 hours and then multiply by rates
     prob += lpSum(route_vars[index]*(df1["Time [min]"])[index] for index in routes)
 
     # constraints
@@ -60,7 +60,7 @@ def LinearProgram(routefile, nodefile):
 def WriteToFile(Mon, Sat):
     file = open('MonFriRoutes.csv', 'w', newline= '')
     writer = csv.writer(file)
-    header = ["Route", "Time [min]", "Region"]
+    header = ["Route", "Cost", "Region"]
     writer.writerow(header)
     for zone in Mon:
         for route in zone:
@@ -75,7 +75,13 @@ def WriteToFile(Mon, Sat):
                     if arc.to_store == route[i + 1]:
                         time += (arc.time / 60)
             string += route[-1].name
-            writer.writerow([string, str(time), route[i].region])
+            cost_ = time/60
+            if cost_ <= 4.00:
+                cost = 225*cost_
+            else:
+                extra = cost_ - 4
+                cost = extra*275 + ((cost_ - extra)*225)
+            writer.writerow([string, str(cost), route[i].region])
     file.close()
 
     file = open('SatRoutes.csv', 'w', newline= '')
