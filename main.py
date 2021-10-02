@@ -31,12 +31,15 @@ def LinearProgram(routefile, nodefile):
     df1 = pd.read_csv(routefile)
     df2 = pd.read_csv(nodefile)
 
+    # rename routes
+    routes_df = pd.Series(df1.Route, index = np.arange(len(df1.Route)))
+
     # name LP
     prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
 
     # create variables
-    routevars = LpVariable.dicts("Route", df1.Route, LpBinary)
-    routes = np.array(df1.Route)
+    routevars = LpVariable.dicts("Route", routes_df.index, LpBinary)
+    routes = np.array(routes_df.index)
     c_array = df1.Cost.to_numpy()
     cost = pd.Series(c_array, index = routes)
 
@@ -49,7 +52,7 @@ def LinearProgram(routefile, nodefile):
     # for each node and each route
     for node in df2["Average Demands"]:
         node = ''.join(node.split())
-        for route in routevars:
+        for route in df1.Route:
             # if the route contains the node, add to the node_routes array
             if node in route:
                 node_routes.append(1)
@@ -63,6 +66,23 @@ def LinearProgram(routefile, nodefile):
 
     for i in node_array:
         prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
+
+    # Solving routines
+    prob.writeLP('Woolworths.lp')
+
+    prob.solve()
+
+    print("263 OR Project 2021 \n")
+
+    # The status of the solution is printed to the screen
+    print("Status:", LpStatus[prob.status])
+
+    # The optimised objective function (cost of routing) is printed   
+    print("Total Cost of Routes = ", value(prob.objective))
+
+    for v in prob.variables():
+        print(v.name)
+
     return
 
 
