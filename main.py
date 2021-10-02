@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import itertools
 import csv
+from pulp import *
+
 
 def main():
     PlotStores()
@@ -19,7 +21,41 @@ def main():
         tutal.append(ttwo)
     
     WriteToFile(total,tutal)
+
+    LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
+
     return
+
+def LinearProgram(routefile, nodefile):
+    # read route data
+    df1 = pd.read_csv(routefile)
+    df2 = pd.read_csv(nodefile)
+
+    # name LP
+    prob = LpProblem("Woolworths Routing Problem", LpMinimize)
+
+    # create variables
+    route_vars = LpVariable.dicts("Route", df1.Route, LpBinary)
+
+    routes = np.array(df1.Route)
+    # objective function
+    prob += lpSum(route_vars[index]*(df1["Time [min]"])[index] for index in routes)
+
+    # constraints
+    node_routes = []
+    # for each node and each route
+    for node in df2["Average Demands"]:
+        for route in route_vars:
+            # if the route contains the node, add to the node_routes array
+            if route.str.contains(node):
+                node_routes.append(route)
+        # this line should create a constraint for each node that sums the routes which go to that node 
+        prob += lpSum(node_routes[i] for i in df2["Average Demands"]) == 1
+        # reset the node_routes array for the next node
+        node_routes = []
+
+    return
+
 
 def WriteToFile(Mon, Sat):
     file = open('MonFriRoutes.csv', 'w', newline= '')
