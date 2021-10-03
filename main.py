@@ -23,7 +23,7 @@ def main():
     WriteToFile(total,tutal)
 
     LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
-
+    LinearProgram("SatRoutes.csv", "AverageDemands.csv")
     return
 
 def LinearProgram(routefile, nodefile):
@@ -65,6 +65,8 @@ def LinearProgram(routefile, nodefile):
 
     for i in node_array:
         prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
+    # adding 30 truck limit, will need to find out how to do extra cost one
+    prob += lpSum([routevars[j] for j in routes]) <= 60
 
     # Solving routines
     prob.writeLP('Woolworths.lp')
@@ -79,6 +81,9 @@ def LinearProgram(routefile, nodefile):
     # The optimised objective function (cost of routing) is printed   
     print("Total Cost of Routes = ", value(prob.objective))
 
+    for v in prob.variables():
+        if v.varValue == 1.0:
+            print(v.name, "=", v.varValue)
     return
 
 
@@ -112,7 +117,7 @@ def WriteToFile(Mon, Sat):
 
     file = open('SatRoutes.csv', 'w', newline= '')
     writer = csv.writer(file)
-    header = ["Route", "Time [min]", "Region"]
+    header = ["Route", "Cost", "Region"]
     writer.writerow(header)
     for zone in Sat:
         for route in zone:
@@ -127,7 +132,14 @@ def WriteToFile(Mon, Sat):
                     if arc.to_store == route[i + 1]:
                         time += (arc.time / 60)
             string += route[-1].name
-            writer.writerow([string, str(time), route[i].region])
+            cost_ = time/60
+            if cost_ <= 4.00:
+                cost = 225*cost_
+            else:
+                extra = cost_ - 4
+                cost = extra*275 + ((cost_ - extra)*225)
+            string = ''.join(string.split())
+            writer.writerow([string, str(cost), route[i].region])
     file.close()
     return
 
@@ -197,7 +209,7 @@ def PlotStores():
 def CreateNodeSets(network):
     possible = network.nodes[1::]
     sets = []
-    for L in range(2, 5):
+    for L in range(1, len(possible)):
         for subset in itertools.combinations(possible, L):
             demand = 0
             for node in subset:
@@ -214,7 +226,7 @@ def CreateNodeSets(network):
         poss_tour.append(start)
         
     sets2 = []
-    for L in range(2, len(possible) + 1):
+    for L in range(1, len(possible)):
         for subset in itertools.combinations(possible, L):
             sat = True
             for node in subset:
