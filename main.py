@@ -38,11 +38,10 @@ def LinearProgram(routefile, nodefile):
     prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
 
     # create variables
-    routevars = LpVariable.dicts("Route", routes_df.index, LpBinary)
+    routevars = LpVariable.dicts("Route", routes_df.index, 0, None, LpBinary)
     routes = np.array(routes_df.index)
     c_array = df1.Cost.to_numpy()
     cost = pd.Series(c_array, index = routes)
-
     # objective function of costs, so divide the time by 4 hours and then multiply by rates
     prob += lpSum([(routevars[index])*(cost)[index] for index in routes])
 
@@ -79,9 +78,6 @@ def LinearProgram(routefile, nodefile):
 
     # The optimised objective function (cost of routing) is printed   
     print("Total Cost of Routes = ", value(prob.objective))
-
-    for v in prob.variables():
-        print(v.name)
 
     return
 
@@ -151,7 +147,7 @@ def TrimTours(array):
                     
                     time += (arc.time / 60)
 
-        if time < 240:
+        if time < 360:
             trimmed.append(tour)
     return trimmed
 
@@ -201,7 +197,7 @@ def PlotStores():
 def CreateNodeSets(network):
     possible = network.nodes[1::]
     sets = []
-    for L in range(2, len(possible) + 1):
+    for L in range(2, 5):
         for subset in itertools.combinations(possible, L):
             demand = 0
             for node in subset:
