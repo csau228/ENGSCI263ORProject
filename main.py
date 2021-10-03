@@ -49,19 +49,45 @@ def LinearProgram(routefile, nodefile):
     matrix = []
     node_routes = []
     # for each node and each route
-    for node in df2["Average Demands"]:
-        node = ''.join(node.split())
-        for route in df1.Route:
+    if routefile == "MonFriRoutes.csv":
+        for node in df2["Average Demands"]:
+            node = ''.join(node.split())
+            for route in df1.Route:
             # if the route contains the node, add to the node_routes array
-            if node in route:
-                node_routes.append(1)
-            else:
-                node_routes.append(0)
+                if node in route:
+                    node_routes.append(1)
+                else:
+                    node_routes.append(0)
         # reset the node_routes array for the next node
-        matrix.append(node_routes)
-        node_routes = []
-    node_array = df2["Average Demands"].to_numpy()
-    nodepatterns = makeDict([node_array, routes], matrix, 0)
+            matrix.append(node_routes)
+            node_routes = []
+            
+    else:
+        for node in df2["Average Demands"]:
+            if "Countdown" in node:
+                if "Metro" not in node:
+                    node = ''.join(node.split())
+                    for route in df1.Route:
+            # if the route contains the node, add to the node_routes array
+                        if node in route:
+                            node_routes.append(1)
+                        else:
+                            node_routes.append(0)
+                else:
+                    continue
+        # reset the node_routes array for the next node
+            matrix.append(node_routes)
+            node_routes = []
+    if routefile == "MonFriRoutes.csv":    
+        node_array = df2["Average Demands"].to_numpy()
+        nodepatterns = makeDict([node_array, routes], matrix, 0)
+    else:
+        node_array = []
+        for node in df2["Average Demands"]:
+            if "Countdown" in node:
+                if "Metro" not in node:
+                    node_array.append(node)
+        nodepatterns = makeDict([node_array, routes], matrix, 0)
 
     for i in node_array:
         prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
@@ -69,7 +95,10 @@ def LinearProgram(routefile, nodefile):
     prob += lpSum([routevars[j] for j in routes]) <= 60
 
     # Solving routines
-    prob.writeLP('Woolworths.lp')
+    if routefile == "SatRoutes.csv":
+        prob.writeLP('WoolworthsSat.lp')
+    else:
+        prob.writeLP('WoolworthsWeek.lp')
 
     prob.solve()
 
@@ -125,7 +154,7 @@ def WriteToFile(Mon, Sat):
             time = 0
             for i in range(len(route) - 1):
 
-                string += (route[i].name + "--")
+                string += (route[i].name)
                 time += (route[i].dSat * 7.5)
 
                 for arc in route[i].arcs_out:
