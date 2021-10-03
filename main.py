@@ -24,6 +24,7 @@ def main():
 
     LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
     LinearProgram("SatRoutes.csv", "AverageDemands.csv")
+
     return
 
 def LinearProgram(routefile, nodefile):
@@ -110,10 +111,17 @@ def LinearProgram(routefile, nodefile):
     # The optimised objective function (cost of routing) is printed   
     print("Total Cost of Routes = ", value(prob.objective))
 
+
+
     for v in prob.variables():
         if v.varValue == 1.0:
             print(v.name, "=", v.varValue)
-    return
+            route_name = str(v)
+            route_no = int(route_name[6:])
+            print(routes_df[route_no])
+
+    
+
 
 
 def WriteToFile(Mon, Sat):
