@@ -135,13 +135,14 @@ def LinearProgram(routefile, nodefile):
 
     # The optimised objective function (cost of routing) is printed   
     print("Total Cost of Routes = ", value(prob.objective))
+
+
     vars_to_use = []
     for v in prob.variables():
         if v.varValue == 1.0:
             vars_to_use.append(v.name)
             print(v.name, "=", v.varValue)
     return vars_to_use
-
 
 def WriteToFile(Mon, Sat):
     file = open('MonFriRoutes.csv', 'w', newline= '')
