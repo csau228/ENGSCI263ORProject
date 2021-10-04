@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import itertools
 import csv
 from pulp import *
-
+import openrouteservice as ors
+import folium
 
 def main():
     PlotStores()
@@ -22,8 +23,35 @@ def main():
     
     WriteToFile(total,tutal)
 
-    LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
-    LinearProgram("SatRoutes.csv", "AverageDemands.csv")
+    rW = LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
+    rS = LinearProgram("SatRoutes.csv", "AverageDemands.csv")
+
+    PlotRoutes(rW)
+    return
+
+def PlotRoutes(routes):
+    ORSkey = 'hello'
+    df = pd.read_csv("MonFriRoutes.csv")
+    df = df.Route
+    locations = pd.read_csv("WoolworthsLocations.csv")
+    coords = locations[['Long','Lat']]
+    coords  = coords.to_numpy().tolist()
+    client = ors.Client(key=ORSkey)
+
+    for route in routes:
+        coords_use = []
+        r = route.split("_")
+        r2 = df.iloc[int(r[1])]
+        r2 = r2.split("--")
+        for node in r2:
+            for i in range(len(locations)):
+                p = locations.iloc[i]
+                if p["Store"] == node:
+                    coords_use.append(coords[i])
+
+        rs = client.directions(coordinates = [coords_use], profile = 'driving-hvg', format = 'geojson', validate = False)
+        m = folium.Map(location = [-36.95770671222872,           174.81407132219618])
+        folium.PolyLine(locations = [list(reversed(coord))for coord in route['features'][0]['geometry']['coordinates']]).add_to(m)
     return
 
 def LinearProgram(routefile, nodefile):
@@ -33,7 +61,6 @@ def LinearProgram(routefile, nodefile):
 
     # rename routes
     routes_df = pd.Series(df1.Route, index = np.arange(len(df1.Route)))
-
     # name LP
     prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
 
@@ -51,7 +78,7 @@ def LinearProgram(routefile, nodefile):
     # for each node and each route
     if routefile == "MonFriRoutes.csv":
         for node in df2["Average Demands"]:
-            node = ''.join(node.split())
+            
             for route in df1.Route:
             # if the route contains the node, add to the node_routes array
                 if node in route:
@@ -66,7 +93,6 @@ def LinearProgram(routefile, nodefile):
         for node in df2["Average Demands"]:
             if "Countdown" in node:
                 if "Metro" not in node:
-                    node = ''.join(node.split())
                     for route in df1.Route:
             # if the route contains the node, add to the node_routes array
                         if node in route:
@@ -109,11 +135,12 @@ def LinearProgram(routefile, nodefile):
 
     # The optimised objective function (cost of routing) is printed   
     print("Total Cost of Routes = ", value(prob.objective))
-
+    vars_to_use = []
     for v in prob.variables():
         if v.varValue == 1.0:
+            vars_to_use.append(v.name)
             print(v.name, "=", v.varValue)
-    return
+    return vars_to_use
 
 
 def WriteToFile(Mon, Sat):
@@ -127,7 +154,7 @@ def WriteToFile(Mon, Sat):
             time = 0
             for i in range(len(route) - 1):
 
-                string += (route[i].name)
+                string += (route[i].name + "--")
                 time += (route[i].dMonFri * 7.5)
 
                 for arc in route[i].arcs_out:
@@ -140,7 +167,6 @@ def WriteToFile(Mon, Sat):
             else:
                 extra = cost_ - 4
                 cost = extra*275 + ((cost_ - extra)*225)
-            string = ''.join(string.split())
             writer.writerow([string, str(cost), route[i].region])
     file.close()
 
@@ -167,7 +193,6 @@ def WriteToFile(Mon, Sat):
             else:
                 extra = cost_ - 4
                 cost = extra*275 + ((cost_ - extra)*225)
-            string = ''.join(string.split())
             writer.writerow([string, str(cost), route[i].region])
     file.close()
     return
