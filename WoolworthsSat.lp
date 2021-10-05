@@ -757,7 +757,7 @@ OBJ: 250.88125 Route_0 + 166.36125 Route_1 + 389.18875 Route_10
  + 591.773125 Route_99 + 693.34625 Route_990 + 735.631875 Route_991
  + 757.59125 Route_992 + 759.2625 Route_993 + 764.901875 Route_994
  + 732.045 Route_995 + 728.8175 Route_996 + 765.458125 Route_997
- + 832.561875 Route_998 + 697.60375 Route_999
+ + 832.561875 Route_998 + 697.60375 Route_999 + 2000 xt
 Subject To
 _C1: Route_0 + Route_10 + Route_11 + Route_12 + Route_13 + Route_14 + Route_15
  + Route_16 + Route_17 + Route_175 + Route_176 + Route_177 + Route_178
@@ -2415,7 +2415,7 @@ _C54: Route_0 + Route_1 + Route_10 + Route_100 + Route_1000 + Route_1001
  + Route_980 + Route_981 + Route_982 + Route_983 + Route_984 + Route_985
  + Route_986 + Route_987 + Route_988 + Route_989 + Route_99 + Route_990
  + Route_991 + Route_992 + Route_993 + Route_994 + Route_995 + Route_996
- + Route_997 + Route_998 + Route_999 <= 60
+ + Route_997 + Route_998 + Route_999 - xt <= 60
 _C6: Route_1495 + Route_1503 + Route_1511 + Route_1512 + Route_1513
  + Route_1514 + Route_1515 + Route_1516 + Route_1517 + Route_1539 + Route_1540
  + Route_1541 + Route_1542 + Route_1543 + Route_1544 + Route_1545 + Route_1567
@@ -2499,6 +2499,8 @@ _C9: Route_1000 + Route_1001 + Route_1002 + Route_1003 + Route_1004
  + Route_875 + Route_876 + Route_877 + Route_878 + Route_879 + Route_992
  + Route_993 + Route_994 + Route_995 + Route_996 + Route_997 + Route_998
  + Route_999 = 1
+Bounds
+ xt <= 5
 Binaries
 Route_0
 Route_1

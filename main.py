@@ -70,14 +70,14 @@ def LinearProgram(routefile, nodefile):
     routes_df = pd.Series(df1.Route, index = np.arange(len(df1.Route)))
     # name LP
     prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
-
+    xt = LpVariable('xt', upBound= 5, lowBound= 0)
     # create variables
     routevars = LpVariable.dicts("Route", routes_df.index, 0, None, LpBinary)
     routes = np.array(routes_df.index)
     c_array = df1.Cost.to_numpy()
     cost = pd.Series(c_array, index = routes)
     # objective function of costs, so divide the time by 4 hours and then multiply by rates
-    prob += lpSum([(routevars[index])*(cost)[index] for index in routes])
+    prob += (lpSum([(routevars[index])*(cost)[index] for index in routes]) + 2000*xt)
 
     # constraints
     matrix = []
@@ -125,7 +125,7 @@ def LinearProgram(routefile, nodefile):
     for i in node_array:
         prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
     # adding 30 truck limit, will need to find out how to do extra cost one
-    prob += lpSum([routevars[j] for j in routes]) <= 60
+    prob += (lpSum([routevars[j] for j in routes]) - xt) <= 60
 
     # Solving routines
     if routefile == "SatRoutes.csv":
