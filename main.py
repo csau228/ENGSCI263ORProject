@@ -88,7 +88,14 @@ def LinearProgram(routefile, nodefile):
             
             for route in df1.Route:
             # if the route contains the node, add to the node_routes array
-                if node in route:
+                route2 = route.split('--')
+                notvar = False
+                for node2 in route2:
+                    if node == node2:
+                        notvar = True
+                    else:
+                        continue
+                if notvar == True:
                     node_routes.append(1)
                 else:
                     node_routes.append(0)
@@ -102,7 +109,14 @@ def LinearProgram(routefile, nodefile):
                 if "Metro" not in node:
                     for route in df1.Route:
             # if the route contains the node, add to the node_routes array
-                        if node in route:
+                        route2 = route.split('--')
+                        notvar = False
+                        for node2 in route2:
+                            if node == node2:
+                                notvar = True
+                            else:
+                                continue
+                        if notvar == True:
                             node_routes.append(1)
                         else:
                             node_routes.append(0)
@@ -188,7 +202,7 @@ def WriteToFile(Mon, Sat):
             time = 0
             for i in range(len(route) - 1):
 
-                string += (route[i].name)
+                string += (route[i].name + '--')
                 time += (route[i].dSat * 7.5)
 
                 for arc in route[i].arcs_out:
