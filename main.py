@@ -32,11 +32,13 @@ def main():
 def PlotRoutes(routes):
     ORSkey = '5b3ce3597851110001cf62485dc6c8ffe33c46e7b4be70ba31980fcb'
     df = pd.read_csv("MonFriRoutes.csv")
+    df1 = pd.read_csv("MonFriRoutes.csv")
     df = df.Route
     locations = pd.read_csv("WoolworthsLocations.csv")
     coords = locations[['Long','Lat']]
     coords  = coords.to_numpy().tolist()
     client = ors.Client(key=ORSkey)
+
     
     colors = []
     for i in range(len(routes)):
@@ -57,6 +59,19 @@ def PlotRoutes(routes):
         rs = client.directions(coordinates = coords_use, profile = 'driving-hgv', format = 'geojson', validate = False)
         folium.PolyLine(locations = [list(reversed(coord))for coord in rs['features'][0]['geometry']['coordinates']], color = colors[counter]).add_to(m)
         counter += 1
+
+    for i in range(0, len(coords)): 
+        if locations.Type[i] == "Countdown":
+            iconCol = "green"
+        elif locations.Type[i] == "FreshChoice":
+            iconCol = "blue"
+        elif locations.Type[i] == "SuperValue":
+            iconCol = "red"
+        elif locations.Type[i] == "Countdown Metro":
+            iconCol = "orange"
+        elif locations.Type[i] == "Distribution Centre":
+            iconCol = "black"
+        folium.Marker(list(reversed(coords[i])), popup = locations.Store[i], icon = folium.Icon(color = iconCol)).add_to(m)
     
     m.save("map.html")
     return
@@ -168,7 +183,7 @@ def LinearProgram(routefile, nodefile):
 def WriteToFile(Mon, Sat):
     file = open('MonFriRoutes.csv', 'w', newline= '')
     writer = csv.writer(file)
-    header = ["Route", "Cost", "Region"]
+    header = ["Route", "Cost", "Region", "Time"]
     writer.writerow(header)
     for zone in Mon:
         for route in zone:
@@ -189,12 +204,12 @@ def WriteToFile(Mon, Sat):
             else:
                 extra = cost_ - 4
                 cost = extra*275 + ((cost_ - extra)*225)
-            writer.writerow([string, str(cost), route[i].region])
+            writer.writerow([string, str(cost), route[i].region, str(time/60)])
     file.close()
 
     file = open('SatRoutes.csv', 'w', newline= '')
     writer = csv.writer(file)
-    header = ["Route", "Cost", "Region"]
+    header = ["Route", "Cost", "Region", "Time"]
     writer.writerow(header)
     for zone in Sat:
         for route in zone:
@@ -215,7 +230,7 @@ def WriteToFile(Mon, Sat):
             else:
                 extra = cost_ - 4
                 cost = extra*275 + ((cost_ - extra)*225)
-            writer.writerow([string, str(cost), route[i].region])
+            writer.writerow([string, str(cost), route[i].region, str(time/60)])
     file.close()
     return
 
