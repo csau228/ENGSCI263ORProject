@@ -8,6 +8,10 @@ from pulp import *
 import openrouteservice as ors
 import folium
 from random import randint
+from scipy.stats import expon
+
+rrr = 1
+
 def main():
     PlotStores()
 
@@ -26,10 +30,62 @@ def main():
     rW = LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
     rS = LinearProgram("SatRoutes.csv", "AverageDemands.csv")
 
-    PlotRoutes(rW)
+    PlotRoutesWeek(rW)
+    PlotRoutesSat(rS)
+
+    Simulation()
     return
 
-def PlotRoutes(routes):
+def Simulation():
+
+    return
+
+def PlotRoutesSat(routes):
+    ORSkey = '5b3ce3597851110001cf62485dc6c8ffe33c46e7b4be70ba31980fcb'
+    df = pd.read_csv("SatRoutes.csv")
+    df1 = pd.read_csv("SatRoutes.csv")
+    df = df.Route
+    locations = pd.read_csv("WoolworthsLocations.csv")
+    coords = locations[['Long','Lat']]
+    coords  = coords.to_numpy().tolist()
+    client = ors.Client(key=ORSkey)
+
+    
+    colors = []
+    for i in range(len(routes)):
+        colors.append('#%06X' % randint(0, 0xFFFFFF))
+    m = folium.Map(location = [-36.95770671222872, 174.81407132219618])
+    counter = 0
+    for route in routes:
+        coords_use = []
+        r = route.split("_")
+        r2 = df.iloc[int(r[1])]
+        r2 = r2.split("--")
+        for node in r2:
+            for i in range(len(locations)):
+                p = locations.iloc[i]
+                if p["Store"] == node:
+                    coords_use.append(coords[i])
+    
+        rs = client.directions(coordinates = coords_use, profile = 'driving-hgv', format = 'geojson', validate = False)
+        folium.PolyLine(locations = [list(reversed(coord))for coord in rs['features'][0]['geometry']['coordinates']], color = colors[counter]).add_to(m)
+        counter += 1
+    for i in range(0, len(coords)): 
+        if locations.Type[i] == "Countdown":
+            iconCol = "green"
+        elif locations.Type[i] == "FreshChoice":
+            iconCol = "blue"
+        elif locations.Type[i] == "SuperValue":
+            iconCol = "red"
+        elif locations.Type[i] == "Countdown Metro":
+            iconCol = "orange"
+        elif locations.Type[i] == "Distribution Centre":
+            iconCol = "black"
+        folium.Marker(list(reversed(coords[i])), popup = locations.Store[i], icon = folium.Icon(color = iconCol)).add_to(m)
+    m.save("Satroute.html")
+    return
+
+def PlotRoutesWeek(routes):
     ORSkey = '5b3ce3597851110001cf62485dc6c8ffe33c46e7b4be70ba31980fcb'
     df = pd.read_csv("MonFriRoutes.csv")
     df1 = pd.read_csv("MonFriRoutes.csv")
@@ -72,8 +128,8 @@ def PlotRoutes(routes):
         elif locations.Type[i] == "Distribution Centre":
             iconCol = "black"
         folium.Marker(list(reversed(coords[i])), popup = locations.Store[i], icon = folium.Icon(color = iconCol)).add_to(m)
-    
-    m.save("map.html")
+
+    m.save("mapWeekday.html")
     return
 
 def LinearProgram(routefile, nodefile):
