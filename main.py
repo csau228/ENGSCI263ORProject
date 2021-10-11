@@ -8,9 +8,6 @@ from pulp import *
 import openrouteservice as ors
 import folium
 from random import randint
-from scipy.stats import expon
-
-rrr = 1
 
 def main():
     PlotStores()
@@ -30,15 +27,52 @@ def main():
     rW = LinearProgram("MonFriRoutes.csv", "AverageDemands.csv")
     rS = LinearProgram("SatRoutes.csv", "AverageDemands.csv")
 
-    PlotRoutesWeek(rW)
-    PlotRoutesSat(rS)
+    #PlotRoutesWeek(rW)
+    #PlotRoutesSat(rS)
+    opt = [0]*1000
+    for i in range(1000):
+        opt[i] = Simulation(rW)
 
-    Simulation()
+    print(np.mean(opt))
     return
 
-def Simulation():
+def GenerateDemand(values):
+    return np.random.choice(values)
 
+def GenerateTime(values):
     return
+
+def Simulation(routes):
+    # get all routes, then generate random demands based on the demand profile
+    df = pd.read_csv("MonFriRoutes.csv")
+    df2 = pd.read_csv("MonFri_Demands_Distr.csv")
+    opt = []
+    overdemand = 0
+    for route in routes:
+        demand = []
+        r = route.split("_")
+        r2 = df.iloc[int(r[1])]
+        cost = r2["Cost"]
+        r2 = r2["Route"].split("--")
+        for node in r2:
+            if node == "Distribution Centre Auckland":
+                continue
+            for i in range(len(df2)):
+                p = df2.iloc[i]
+                if p["Store"] == node:
+                    demand.append(GenerateDemand(p.values[1::]))
+        if(sum(demand) > 26):
+            overdemand += 1
+            if len(routes) + overdemand > 30:
+                cost += 2000
+            else:
+                cost += 225*4 # add extra truck worth because demand exceeds
+            opt.append(cost)
+        else:
+            opt.append(cost)
+
+    opt = sum(opt)  
+    return opt
 
 def PlotRoutesSat(routes):
     ORSkey = '5b3ce3597851110001cf62485dc6c8ffe33c46e7b4be70ba31980fcb'
