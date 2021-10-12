@@ -37,6 +37,8 @@ def main():
 
     print(np.mean(opt))
     print(np.std(opt))
+    print(opt[int(len(opt)*0.025-1)])
+    print(opt[int(len(opt)*0.975-1)])
     PlotSimulations(opt)
 
     return
