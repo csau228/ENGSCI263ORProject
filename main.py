@@ -8,9 +8,10 @@ from pulp import *
 import openrouteservice as ors
 import folium
 from random import randint
+import seaborn as sns
 
 def main():
-    PlotStores()
+    #PlotStores()
 
     total = []
     tutal = []
@@ -29,11 +30,15 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
-    opt = [0]*10
-    for i in range(10):
+    opt = [0]*1000
+    for i in range(len(opt)):
         opt[i] = Simulation(rW)
 
+
     print(np.mean(opt))
+    print(np.std(opt))
+    PlotSimulations(opt)
+
     return
 
 def GenerateDemand(values):
@@ -41,6 +46,23 @@ def GenerateDemand(values):
 
 def GenerateTime(min, max):
     return np.random.uniform(min, max)
+
+def PlotSimulations(results):
+    results.sort()
+    plt.hist(results, histtype='stepfilled', alpha=0.5)
+    plt.axvline(results[int(len(results)*0.025-1)], 0, 1, label='~95% Confidence Interval')
+    plt.axvline(results[int(len(results)*0.975-1)], 0, 1)
+    plt.axvline(np.mean(results), 0, 100, c='darkred', label='Mean')
+    plt.title("Simulation of Optimal Costs")
+    plt.xlabel("Objective Function (cost)")
+    plt.ylabel("Frequency") 
+    plt.show()
+
+    # sns.distplot(results, hist=True, 
+    #          color = 'darkblue', 
+    #          hist_kws={'edgecolor':'black'},
+    #          kde_kws={'linewidth': 4}).set_title("Objective Function (cost)")
+    # plt.show()
 
 def Simulation(routes):
     # get all routes, then generate random demands based on the demand profile
