@@ -29,8 +29,8 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
-    opt = [0]*1000
-    for i in range(1000):
+    opt = [0]*10
+    for i in range(10):
         opt[i] = Simulation(rW)
 
     print(np.mean(opt))
@@ -47,10 +47,9 @@ def Simulation(routes):
     df = pd.read_csv("MonFriRoutes.csv")
     df2 = pd.read_csv("MonFri_Demands_Distr.csv")
     opt = []
-    overdemand = 0
     count = 0
     for route in routes:
-        count += 1
+        overdemand = 0
         demand = []
         r = route.split("_")
         r2 = df.iloc[int(r[1])]
@@ -66,22 +65,29 @@ def Simulation(routes):
                     demand.append(GenerateDemand(p.values[1::]))
         if(sum(demand) > 26):
             overdemand += 1
-            if len(routes) + overdemand > 30:
-                cost += 2000
-            else:
-                cost += 225*4 # add extra truck worth because demand exceeds
+            # Have moved this down so extra trucks needed due to traffic can be included
+            # if len(routes) + overdemand > 30:
+                # ost += 2000
+            # else:
+                # cost += 225*4 # add extra truck worth because demand exceeds
             # opt.append(cost)
         
         # TRAFFIC SIMULATION
-        # divide simulation distribution based on if afternoon routes are used
-        time = time + time*GenerateTime(0.18,0.65)
-        if time > 4:
+        time = time + time*GenerateTime(0.18,0.65) #from TomTom traffic data
+        if time > 6:
+            overdemand += 1
+
+        elif time > 4 and time <= 6:
             cost += 275*np.ceil(time-4)
-            opt.append(cost)
 
+        if len(routes) + overdemand > 60:
+            cost += 2000
+            opt.append(cost)
         else:
+            cost += 225*4*overdemand
             opt.append(cost)
 
+    
 
     opt = sum(opt)  
     return opt
