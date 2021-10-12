@@ -39,8 +39,8 @@ def main():
 def GenerateDemand(values):
     return np.random.choice(values)
 
-def GenerateTime(values):
-    return
+def GenerateTime(min, max):
+    return np.random.uniform(min, max)
 
 def Simulation(routes):
     # get all routes, then generate random demands based on the demand profile
@@ -48,11 +48,14 @@ def Simulation(routes):
     df2 = pd.read_csv("MonFri_Demands_Distr.csv")
     opt = []
     overdemand = 0
+    count = 0
     for route in routes:
+        count += 1
         demand = []
         r = route.split("_")
         r2 = df.iloc[int(r[1])]
         cost = r2["Cost"]
+        time = r2["Time"]
         r2 = r2["Route"].split("--")
         for node in r2:
             if node == "Distribution Centre Auckland":
@@ -67,12 +70,22 @@ def Simulation(routes):
                 cost += 2000
             else:
                 cost += 225*4 # add extra truck worth because demand exceeds
+            # opt.append(cost)
+        
+        # TRAFFIC SIMULATION
+        # divide simulation distribution based on if afternoon routes are used
+        time = time + time*GenerateTime(0.18,0.65)
+        if time > 4:
+            cost += 275*np.ceil(time-4)
             opt.append(cost)
+
         else:
             opt.append(cost)
 
+
     opt = sum(opt)  
     return opt
+
 
 def PlotRoutesSat(routes):
     ORSkey = '5b3ce3597851110001cf62485dc6c8ffe33c46e7b4be70ba31980fcb'
