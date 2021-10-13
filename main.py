@@ -95,7 +95,10 @@ def Simulation(routes, routefile, demands):
             overdemand += 1
         
         # TRAFFIC SIMULATION
-        time = time + time*GenerateTime(0.18,0.65) #from TomTom traffic data
+        if(routefile == "MonFriRoutes.csv"):
+            time = time + time*GenerateTime(0.18,0.65) #from TomTom traffic data
+        else:
+            time = time + time*GenerateTime(0.08, 0.31)
         if time > 6:
             overdemand += 1
 
