@@ -32,6 +32,7 @@ def main():
     #PlotRoutesSat(rS)
     optWeek = [0]*10
     optSat = [0]*10
+    np.random.seed(19442)
     for i in range(len(optWeek)):
         optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
         optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
@@ -42,8 +43,11 @@ def main():
     print(np.std(optWeek))
     print(optWeek[int(len(optWeek)*0.025-1)])
     print(optWeek[int(len(optWeek)*0.975-1)])
-    # PlotSimulations(optWeek)
-    # PlotSimulations(optSat)
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
 
     return
 
@@ -272,6 +276,10 @@ def LinearProgram(routefile, nodefile):
         # reset the node_routes array for the next node
             matrix.append(node_routes)
             node_routes = []
+   
+   
+   
+   
     if routefile == "MonFriRoutes.csv":    
         node_array = df2["Average Demands"].to_numpy()
         nodepatterns = makeDict([node_array, routes], matrix, 0)
