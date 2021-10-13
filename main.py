@@ -30,16 +30,20 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
-    opt = [0]*1000
-    for i in range(len(opt)):
-        opt[i] = Simulation(rW)
+    optWeek = [0]*1000
+    optSat = [0]*1000
+    for i in range(len(optWeek)):
+        optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
+        optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
 
+    print("Mean of weekday optimal costs = ", np.mean(optWeek))
+    print("Mean of Saturday optimal costs = ", np.mean(optSat))
 
-    print(np.mean(opt))
-    print(np.std(opt))
-    print(opt[int(len(opt)*0.025-1)])
-    print(opt[int(len(opt)*0.975-1)])
-    PlotSimulations(opt)
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
 
     return
 
@@ -66,10 +70,10 @@ def PlotSimulations(results):
     #          kde_kws={'linewidth': 4}).set_title("Objective Function (cost)")
     # plt.show()
 
-def Simulation(routes):
+def Simulation(routes, routefile, demands):
     # get all routes, then generate random demands based on the demand profile
-    df = pd.read_csv("MonFriRoutes.csv")
-    df2 = pd.read_csv("MonFri_Demands_Distr.csv")
+    df = pd.read_csv(routefile)
+    df2 = pd.read_csv(demands)
     opt = []
     count = 0
     for route in routes:
