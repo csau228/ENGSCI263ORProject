@@ -89,12 +89,6 @@ def Simulation(routes):
                     demand.append(GenerateDemand(p.values[1::]))
         if(sum(demand) > 26):
             overdemand += 1
-            # Have moved this down so extra trucks needed due to traffic can be included
-            # if len(routes) + overdemand > 30:
-                # ost += 2000
-            # else:
-                # cost += 225*4 # add extra truck worth because demand exceeds
-            # opt.append(cost)
         
         # TRAFFIC SIMULATION
         time = time + time*GenerateTime(0.18,0.65) #from TomTom traffic data
@@ -110,8 +104,6 @@ def Simulation(routes):
         else:
             cost += 225*4*overdemand
             opt.append(cost)
-
-    
 
     opt = sum(opt)  
     return opt
