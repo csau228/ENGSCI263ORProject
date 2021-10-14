@@ -30,8 +30,8 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
-    optWeek = [0]*10
-    optSat = [0]*10
+    optWeek = [0]*100
+    optSat = [0]*100
     np.random.seed(19442)
     for i in range(len(optWeek)):
         optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
@@ -108,7 +108,7 @@ def Simulation(routes, routefile, demands):
 
         elif time > 4 and time <= 6:
             cost += 275*np.ceil(time-4)
-
+        overdemand = overdemand/3 # assume 3 stores can be visted by truck with excess 
         if len(routes) + overdemand > 60:
             cost += 2000
             opt.append(cost)
