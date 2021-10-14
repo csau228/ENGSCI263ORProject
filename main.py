@@ -11,7 +11,7 @@ from random import randint
 import seaborn as sns
 
 def main():
-    PlotStores()
+    #PlotStores()
 
     total = []
     tutal = []
@@ -30,9 +30,8 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
-
-    optWeek = [0]*1000
-    optSat = [0]*1000
+    optWeek = [0]*10
+    optSat = [0]*10
     np.random.seed(19442)
     for i in range(len(optWeek)):
         optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
@@ -277,6 +276,10 @@ def LinearProgram(routefile, nodefile):
         # reset the node_routes array for the next node
             matrix.append(node_routes)
             node_routes = []
+   
+   
+   
+   
     if routefile == "MonFriRoutes.csv":    
         node_array = df2["Average Demands"].to_numpy()
         nodepatterns = makeDict([node_array, routes], matrix, 0)
@@ -529,11 +532,6 @@ class Network(object):
 		
 		# new node, assign values, append to list
         node = WoolyStore(dMonFri, dSat, name, region)
-        
-        node.dMonFri = dMonFri
-        node.dSat = dSat
-        node.name = name
-        node.region = region
 
         self.nodes.append(node)
 
@@ -555,29 +553,43 @@ class Network(object):
     def read_network(self, region, demandfile, travelfile):
         """ Read data from FILENAME and construct the network.
         """
+        # read data for store demands and travel duration between stores
         demands = pd.read_csv(demandfile)
         travels = pd.read_csv(travelfile)
-        self.add_node(0,0,"Distribution Centre Auckland", "All")
+
+        self.add_node(0,0,"Distribution Centre Auckland", "All") # add node for distribution centre
+        
+        # add store to network if it is in the specified region
         for i in range(len(demands)):
             p = demands.iloc[i]
             if p["Zone"] == region:
                 self.add_node(np.ceil(p["Mon to Fri"]), np.ceil(p["Sat"]), p["Average Demands"], p["Zone"])
 
         names = travels["Unnamed: 0"]
+        
+        # loop through every node (+ distribution centre) and set each as source store
         for i in range(len(travels)):
+            
+            # set source store (continue if not in network)
             try:
                 from_store = self.get_node(names.loc[i])
             except ValueError:
                     continue
             row = travels.loc[i]
+            
+            # get travel duration to every other store in network from source store
             for j in range(len(travels)):
                 try:
                     to_store = self.get_node(names.loc[j])
                 except ValueError:
                     continue
                 time = row[names.loc[j]]
+                
+                # check if source and destination are the same
                 if(from_store == to_store):
                     continue
+                
+                # join stores with arc weighted by travel duration, and add to network
                 self.join_nodes(from_store, to_store, time)
         
     def get_node(self, name):
