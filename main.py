@@ -12,7 +12,7 @@ import seaborn as sns
 
 def main():
     #PlotStores()
-
+    mean = []
     total = []
     tutal = []
     zones = CreateNetwork("AverageDemands.csv", "WoolworthsTravelDurations.csv")
@@ -39,6 +39,43 @@ def main():
 
     print("Mean of weekday optimal costs = ", np.mean(optWeek))
     print("Mean of Saturday optimal costs = ", np.mean(optSat))
+    mean.append(np.mean(optWeek))
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
+
+
+
+    total = []
+    tutal = []
+    zones = CreateNetwork("SouthSituations/AverageDemandsNoCP.csv", "SouthSituations/WoolworthsTravelDurationsNoCP.csv")
+    for zone in zones:
+        one, two = CreateNodeSets(zone)
+        tone = TrimTours(one)
+        ttwo = TrimTours(two)
+        total.append(tone)
+        tutal.append(ttwo)
+
+    WriteToFile(total,tutal)
+
+    rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
+    rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
+
+    optWeek = [0]*100
+    optSat = [0]*100
+    np.random.seed(19442)
+    for i in range(len(optWeek)):
+        optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
+        optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
+
+    print("Mean of weekday optimal costs = ", np.mean(optWeek))
+    print("Mean of Saturday optimal costs = ", np.mean(optSat))
+    mean.append(np.mean(optWeek))
 
     print(np.std(optWeek))
     print(optWeek[int(len(optWeek)*0.025-1)])
@@ -49,6 +86,42 @@ def main():
     PlotSimulations(optWeek)
     PlotSimulations(optSat)
 
+    total = []
+    tutal = []
+    zones = CreateNetwork("SouthSituations/AverageDemandsNoCR.csv", "SouthSituations/WoolworthsTravelDurationsNoCR.csv")
+    for zone in zones:
+        one, two = CreateNodeSets(zone)
+        tone = TrimTours(one)
+        ttwo = TrimTours(two)
+        total.append(tone)
+        tutal.append(ttwo)
+
+    WriteToFile(total,tutal)
+
+    rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
+    rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
+
+    optWeek = [0]*100
+    optSat = [0]*100
+    np.random.seed(19442)
+    for i in range(len(optWeek)):
+        optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
+        optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
+
+    print("Mean of weekday optimal costs = ", np.mean(optWeek))
+    print("Mean of Saturday optimal costs = ", np.mean(optSat))
+    mean.append(np.mean(optWeek))
+
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
+
+    print(mean)
     return
 
 def GenerateDemand(values):
