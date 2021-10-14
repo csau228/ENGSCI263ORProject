@@ -11,7 +11,7 @@ from random import randint
 import seaborn as sns
 
 def main():
-    #PlotStores()
+    PlotStores()
 
     total = []
     tutal = []
@@ -30,6 +30,7 @@ def main():
 
     #PlotRoutesWeek(rW)
     #PlotRoutesSat(rS)
+
     optWeek = [0]*1000
     optSat = [0]*1000
     np.random.seed(19442)
