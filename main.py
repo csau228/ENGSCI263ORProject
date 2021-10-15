@@ -14,8 +14,9 @@ def main2():
     demandFileNames = generateFiles('AverageDemandGreyLynn.xlsx')
     demandFileNames1 = generateFiles('AverageDemandCentral.xlsx')
     demandFileNames2 = generateFiles('AverageDemandManukau.xlsx')
+    demandFileNames3 = generateFiles('AverageDemandSouth.xlsx')
 
-    demandFileNamesAll = demandFileNames + demandFileNames1 + demandFileNames2
+    demandFileNamesAll = demandFileNames + demandFileNames1 + demandFileNames2+ demandFileNames3
 
     for demandFileName in demandFileNamesAll:
     
@@ -34,6 +35,7 @@ def main2():
         WriteToFile(total,tutal)
     
         rW = LinearProgram("MonFriRoutes.csv", demandFileName)
+        rS = LinearProgram("SatRoutes.csv", demandFileName)
 
 def main():
     #PlotStores()
@@ -437,7 +439,7 @@ def LinearProgram(routefile, demandfile):
 
 
     with open("OptimalCost.txt", mode="a", encoding="utf-8") as myFile:
-        myFile.write("Optimal Cost ({}): ".format(day) + str(value(prob.objective)) + "    " + demandfile[:-4] + "Removed" + "\n")
+        myFile.write("Optimal Cost ({}): ".format(day) + str(value(prob.objective)) + "                " + demandfile[:-4] + "Removed" + "\n")
 
     vars_to_use = []
     for v in prob.variables():
