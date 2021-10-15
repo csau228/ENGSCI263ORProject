@@ -1,0 +1,11 @@
+Optimal Cost (Weekday): 20217.954861111117    GreyLynnCentralDemandRemoved
+Optimal Cost (Weekday): 20230.448680555553    AviemoreDriveDemandRemoved
+Optimal Cost (Weekday): 20227.018055555556    HighlandParkDemandRemoved
+Optimal Cost (Weekday): 20078.41458333334    MetroAlbertStreetDemandRemoved
+Optimal Cost (Weekday): 20303.057916666672    MetroHalseyStreetDemandRemoved
+Optimal Cost (Weekday): 20028.94284722222    VictoriaStreetWestDemandRemoved
+Optimal Cost (Weekday): 20035.05243055556    AucklandCityDemandRemoved
+Optimal Cost (Weekday): 20076.21229166667    ManukauDemandRemoved
+Optimal Cost (Weekday): 20077.448541666672    ManukauMallDemandRemoved
+Optimal Cost (Weekday): 20049.684791666667    NorthwestDemandRemoved
+Optimal Cost (Weekday): 20070.27423611111    WestgateDemandRemoved

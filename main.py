@@ -10,6 +10,31 @@ import folium
 from random import randint
 import seaborn as sns
 
+def main2():
+    demandFileNames = generateFiles('AverageDemandGreyLynn.xlsx')
+    demandFileNames1 = generateFiles('AverageDemandCentral.xlsx')
+    demandFileNames2 = generateFiles('AverageDemandManukau.xlsx')
+
+    demandFileNamesAll = demandFileNames + demandFileNames1 + demandFileNames2
+
+    for demandFileName in demandFileNamesAll:
+    
+        mean = []
+        total = []
+        tutal = []
+        zones = CreateNetwork(demandFileName, 'WoolworthsTravelDurations.csv')
+
+        for zone in zones:
+            one, two = CreateNodeSets(zone)
+            tone = TrimTours(one)
+            ttwo = TrimTours(two)
+            total.append(tone)
+            tutal.append(ttwo)
+
+        WriteToFile(total,tutal)
+    
+        rW = LinearProgram("MonFriRoutes.csv", demandFileName)
+
 def main():
     #PlotStores()
     mean = []
@@ -41,93 +66,119 @@ def main():
     print("Mean of Saturday optimal costs = ", np.mean(optSat))
     
     
-    
-    
-    
-    # mean.append(np.mean(optWeek))
-    # print(np.std(optWeek))
-    # print(optWeek[int(len(optWeek)*0.025-1)])
-    # print(optWeek[int(len(optWeek)*0.975-1)])
-    # print(np.std(optSat))
-    # print(optSat[int(len(optSat)*0.025-1)])
-    # print(optSat[int(len(optSat)*0.975-1)])
-    # PlotSimulations(optWeek)
-    # PlotSimulations(optSat)
+    mean.append(np.mean(optWeek))
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
 
 
 
-    # total = []
-    # tutal = []
-    # zones = CreateNetwork("SouthSituations/AverageDemandsNoCP.csv", "SouthSituations/WoolworthsTravelDurationsNoCP.csv")
-    # for zone in zones:
-    #     one, two = CreateNodeSets(zone)
-    #     tone = TrimTours(one)
-    #     ttwo = TrimTours(two)
-    #     total.append(tone)
-    #     tutal.append(ttwo)
+    total = []
+    tutal = []
+    zones = CreateNetwork("SouthSituations/AverageDemandsNoCP.csv", "SouthSituations/WoolworthsTravelDurationsNoCP.csv")
+    for zone in zones:
+        one, two = CreateNodeSets(zone)
+        tone = TrimTours(one)
+        ttwo = TrimTours(two)
+        total.append(tone)
+        tutal.append(ttwo)
 
-    # WriteToFile(total,tutal)
+    WriteToFile(total,tutal)
 
-    # rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
-    # rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
+    rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
+    rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCP.csv")
 
-    # optWeek = [0]*100
-    # optSat = [0]*100
-    # np.random.seed(19442)
-    # for i in range(len(optWeek)):
-    #     optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
-    #     optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
+    optWeek = [0]*100
+    optSat = [0]*100
+    np.random.seed(19442)
+    for i in range(len(optWeek)):
+        optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
+        optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
 
-    # print("Mean of weekday optimal costs = ", np.mean(optWeek))
-    # print("Mean of Saturday optimal costs = ", np.mean(optSat))
-    # mean.append(np.mean(optWeek))
+    print("Mean of weekday optimal costs = ", np.mean(optWeek))
+    print("Mean of Saturday optimal costs = ", np.mean(optSat))
+    mean.append(np.mean(optWeek))
 
-    # print(np.std(optWeek))
-    # print(optWeek[int(len(optWeek)*0.025-1)])
-    # print(optWeek[int(len(optWeek)*0.975-1)])
-    # print(np.std(optSat))
-    # print(optSat[int(len(optSat)*0.025-1)])
-    # print(optSat[int(len(optSat)*0.975-1)])
-    # PlotSimulations(optWeek)
-    # PlotSimulations(optSat)
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
 
-    # total = []
-    # tutal = []
-    # zones = CreateNetwork("SouthSituations/AverageDemandsNoCR.csv", "SouthSituations/WoolworthsTravelDurationsNoCR.csv")
-    # for zone in zones:
-    #     one, two = CreateNodeSets(zone)
-    #     tone = TrimTours(one)
-    #     ttwo = TrimTours(two)
-    #     total.append(tone)
-    #     tutal.append(ttwo)
+    total = []
+    tutal = []
+    zones = CreateNetwork("SouthSituations/AverageDemandsNoCR.csv", "SouthSituations/WoolworthsTravelDurationsNoCR.csv")
+    for zone in zones:
+        one, two = CreateNodeSets(zone)
+        tone = TrimTours(one)
+        ttwo = TrimTours(two)
+        total.append(tone)
+        tutal.append(ttwo)
 
-    # WriteToFile(total,tutal)
+    WriteToFile(total,tutal)
 
-    # rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
-    # rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
+    rW = LinearProgram("MonFriRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
+    rS = LinearProgram("SatRoutes.csv", "SouthSituations/AverageDemandsNoCR.csv")
 
-    # optWeek = [0]*100
-    # optSat = [0]*100
-    # np.random.seed(19442)
-    # for i in range(len(optWeek)):
-    #     optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
-    #     optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
+    optWeek = [0]*100
+    optSat = [0]*100
+    np.random.seed(19442)
+    for i in range(len(optWeek)):
+        optWeek[i] = Simulation(rW, "MonFriRoutes.csv", "MonFri_Demands_Distr.csv")
+        optSat[i] = Simulation(rS, "SatRoutes.csv", "Sat_Demand_Distr.csv")
 
-    # print("Mean of weekday optimal costs = ", np.mean(optWeek))
-    # print("Mean of Saturday optimal costs = ", np.mean(optSat))
-    # mean.append(np.mean(optWeek))
+    print("Mean of weekday optimal costs = ", np.mean(optWeek))
+    print("Mean of Saturday optimal costs = ", np.mean(optSat))
+    mean.append(np.mean(optWeek))
 
-    # print(np.std(optWeek))
-    # print(optWeek[int(len(optWeek)*0.025-1)])
-    # print(optWeek[int(len(optWeek)*0.975-1)])
-    # print(np.std(optSat))
-    # print(optSat[int(len(optSat)*0.025-1)])
-    # print(optSat[int(len(optSat)*0.975-1)])
-    # PlotSimulations(optWeek)
-    # PlotSimulations(optSat)
+    print(np.std(optWeek))
+    print(optWeek[int(len(optWeek)*0.025-1)])
+    print(optWeek[int(len(optWeek)*0.975-1)])
+    print(np.std(optSat))
+    print(optSat[int(len(optSat)*0.025-1)])
+    print(optSat[int(len(optSat)*0.975-1)])
+    PlotSimulations(optWeek)
+    PlotSimulations(optSat)
 
-    # print(mean)
+    print(mean)
     return
+
+def generateFiles(ExcelFile):
+    
+    xls = pd.ExcelFile(ExcelFile)
+
+    suffix = 'TravelDuration' if 'Travel' in ExcelFile else 'Demand'
+
+    header = ['Average Demands', 'Mon to Fri', 'Sat', 'Zone']
+
+    filenames = []
+
+    for i in range(len(xls.sheet_names)):
+        filename = xls.sheet_names[i].split(" ")
+        filenames.append(''.join(filename[:-1])+ suffix +'.csv')
+
+    for i in range(len(filenames)):
+        
+        df = pd.read_excel(xls, i)
+        file = open(filenames[i], 'w', newline='')
+        writer = csv.writer(file)
+        if 'Demand' in filenames[i]:
+            writer.writerow(header) 
+        
+        for j in range(len(df)):
+            writer.writerow(df.iloc[j])
+
+        file.close()
+    
+    return filenames 
 
 def GenerateDemand(values):
     return np.random.choice(values)
@@ -290,33 +341,33 @@ def PlotRoutesWeek(routes):
     m.save("mapWeekday.html")
     return
 
-def LinearProgram(routefile, nodefile):
-    # read route data
-    df1 = pd.read_csv(routefile)
-    df2 = pd.read_csv(nodefile)
+def LinearProgram(routefile, demandfile):
 
-    # rename routes
-    routes_df = pd.Series(df1.Route, index = np.arange(len(df1.Route)))
-    # name LP
+    df1 = pd.read_csv(routefile)
+    df2 = pd.read_csv(demandfile)
+    
+    routes_df = pd.Series(df1.Route, index=np.arange(len(df1.Route)))
+    
     prob = LpProblem("WoolworthsRoutingProblem", LpMinimize)
-    xt = LpVariable('xt', upBound= 5, lowBound= 0)
-    # create variables
+    
+    xt = LpVariable('xt', upBound = 5, lowBound = 0)
+
     routevars = LpVariable.dicts("Route", routes_df.index, 0, None, LpBinary)
     routes = np.array(routes_df.index)
     c_array = df1.Cost.to_numpy()
     cost = pd.Series(c_array, index = routes)
-    # objective function of costs, so divide the time by 4 hours and then multiply by rates
-    prob += (lpSum([(routevars[index])*(cost)[index] for index in routes]) + 2000*xt)
 
-    # constraints
+    #objective function
+    prob += (lpSum([(routevars[index])*(cost)[index]] for index in routes) + 2000*xt)
+
+    #contraints
     matrix = []
     node_routes = []
-    # for each node and each route
+
     if routefile == "MonFriRoutes.csv":
         for node in df2["Average Demands"]:
-            
+
             for route in df1.Route:
-            # if the route contains the node, add to the node_routes array
                 route2 = route.split('--')
                 notvar = False
                 for node2 in route2:
@@ -328,16 +379,13 @@ def LinearProgram(routefile, nodefile):
                     node_routes.append(1)
                 else:
                     node_routes.append(0)
-        # reset the node_routes array for the next node
             matrix.append(node_routes)
-            node_routes = []
-            
+            node_routes=[]
     else:
         for node in df2["Average Demands"]:
             if "Countdown" in node:
                 if "Metro" not in node:
                     for route in df1.Route:
-            # if the route contains the node, add to the node_routes array
                         route2 = route.split('--')
                         notvar = False
                         for node2 in route2:
@@ -353,12 +401,9 @@ def LinearProgram(routefile, nodefile):
                     continue
         # reset the node_routes array for the next node
             matrix.append(node_routes)
-            node_routes = []
-   
-   
-   
-   
-    if routefile == "MonFriRoutes.csv":    
+            node_routes = [] 
+
+    if routefile == "MonFriRoutes.csv":
         node_array = df2["Average Demands"].to_numpy()
         nodepatterns = makeDict([node_array, routes], matrix, 0)
     else:
@@ -371,15 +416,15 @@ def LinearProgram(routefile, nodefile):
 
     for i in node_array:
         prob += lpSum([routevars[j]*nodepatterns[i][j] for j in routes]) == 1
-    # adding 30 truck limit, will need to find out how to do extra cost one
-    prob += (lpSum([routevars[j] for j in routes]) - xt) <= 60
 
-    # Solving routines
+    prob += (lpSum([routevars[j] for j in routes]) - xt) <= 60      
+
     if routefile == "SatRoutes.csv":
+        day = "Sat"
         prob.writeLP('WoolworthsSat.lp')
     else:
         prob.writeLP('WoolworthsWeek.lp')
-
+        day = "Weekday"
     prob.solve()
 
     print("263 OR Project 2021 \n")
@@ -391,12 +436,16 @@ def LinearProgram(routefile, nodefile):
     print("Total Cost of Routes = ", value(prob.objective))
 
 
+    with open("OptimalCost.txt", mode="a", encoding="utf-8") as myFile:
+        myFile.write("Optimal Cost ({}): ".format(day) + str(value(prob.objective)) + "    " + demandfile[:-4] + "Removed" + "\n")
+
     vars_to_use = []
     for v in prob.variables():
         if v.varValue == 1.0:
             vars_to_use.append(v.name)
             print(v.name, "=", v.varValue)
     return vars_to_use
+
 
 def WriteToFile(Mon, Sat):
     file = open('MonFriRoutes.csv', 'w', newline= '')
@@ -683,4 +732,4 @@ class Network(object):
 
 
 if __name__ == "__main__":
-	 main()
+	 main2()

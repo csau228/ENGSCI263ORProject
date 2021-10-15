@@ -1895,7 +1895,6 @@ Distribution Centre Auckland--Countdown Lynmall--Distribution Centre Auckland,29
 Distribution Centre Auckland--Countdown Northwest--Distribution Centre Auckland,379.19562499999995,SR3,1.6853138888888888
 Distribution Centre Auckland--Countdown Te Atatu--Distribution Centre Auckland,345.500625,SR3,1.5355583333333334
 Distribution Centre Auckland--Countdown Te Atatu South--Distribution Centre Auckland,318.46875,SR3,1.4154166666666665
-Distribution Centre Auckland--Countdown Westgate--Distribution Centre Auckland,415.856875,SR3,1.8482527777777777
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Distribution Centre Auckland,511.916875,SR3,2.275186111111111
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Distribution Centre Auckland,594.695625,SR3,2.6430916666666664
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Distribution Centre Auckland,430.8575,SR3,1.9149222222222224
@@ -1905,7 +1904,6 @@ Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Distr
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Distribution Centre Auckland,518.87625,SR3,2.306116666666667
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu--Distribution Centre Auckland,485.181875,SR3,2.156363888888889
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu South--Distribution Centre Auckland,458.14937499999996,SR3,2.0362194444444444
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Westgate--Distribution Centre Auckland,555.5374999999999,SR3,2.4690555555555553
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Distribution Centre Auckland,662.82,SR3,2.945866666666667
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Distribution Centre Auckland,531.04625,SR3,2.3602055555555554
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Distribution Centre Auckland,552.17375,SR3,2.454105555555556
@@ -1914,7 +1912,6 @@ Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Distributi
 Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Distribution Centre Auckland,587.000625,SR3,2.6088916666666666
 Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu--Distribution Centre Auckland,550.80875,SR3,2.448038888888889
 Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu South--Distribution Centre Auckland,509.813125,SR3,2.265836111111111
-Distribution Centre Auckland--Countdown Henderson--Countdown Westgate--Distribution Centre Auckland,623.661875,SR3,2.771830555555556
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Distribution Centre Auckland,644.479375,SR3,2.864352777777778
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Distribution Centre Auckland,623.249375,SR3,2.769997222222222
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Distribution Centre Auckland,608.7193749999999,SR3,2.705419444444444
@@ -1922,35 +1919,27 @@ Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Distribu
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Distribution Centre Auckland,603.1943749999999,SR3,2.6808638888888887
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu--Distribution Centre Auckland,610.5899999999999,SR3,2.713733333333333
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu South--Distribution Centre Auckland,589.9706249999999,SR3,2.6220916666666665
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Westgate--Distribution Centre Auckland,641.6481249999999,SR3,2.851769444444444
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland,542.124375,SR3,2.4094416666666665
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland,459.91999999999996,SR3,2.0440888888888886
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Distribution Centre Auckland,454.33874999999995,SR3,2.019283333333333
 Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Distribution Centre Auckland,566.158125,SR3,2.5162583333333335
 Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu--Distribution Centre Auckland,529.96625,SR3,2.3554055555555555
 Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland,488.970625,SR3,2.1732027777777776
-Distribution Centre Auckland--Countdown Kelston--Countdown Westgate--Distribution Centre Auckland,602.8193749999999,SR3,2.679197222222222
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,521.86,SR3,2.319377777777778
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,531.16,SR3,2.3607111111111108
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,542.1949999999999,SR3,2.4097555555555554
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,523.73125,SR3,2.3276944444444445
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,491.045,SR3,2.1824222222222223
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,578.85625,SR3,2.5726944444444446
 Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,427.945,SR3,1.9019777777777778
 Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,531.249375,SR3,2.361108333333333
 Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,497.555,SR3,2.2113555555555555
 Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,470.523125,SR3,2.091213888888889
-Distribution Centre Auckland--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,567.9112500000001,SR3,2.5240500000000003
 Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,539.930625,SR3,2.3996916666666666
 Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,506.23562499999997,SR3,2.249936111111111
 Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,479.20374999999996,SR3,2.1297944444444443
-Distribution Centre Auckland--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,576.5918750000001,SR3,2.5626305555555557
 Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,534.770625,SR3,2.3767583333333335
 Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,514.15125,SR3,2.2851166666666667
-Distribution Centre Auckland--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,541.53,SR3,2.4068
 Distribution Centre Auckland--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,476.66625000000005,SR3,2.118516666666667
-Distribution Centre Auckland--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,576.15875,SR3,2.560705555555556
-Distribution Centre Auckland--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,544.8218750000001,SR3,2.4214305555555558
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Hobsonville--Distribution Centre Auckland,777.428125,SR3,3.455236111111111
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Kelston--Distribution Centre Auckland,645.6543750000001,SR3,2.869575
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Distribution Centre Auckland,666.781875,SR3,2.9634750000000003
@@ -1959,7 +1948,6 @@ Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Cou
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Northwest--Distribution Centre Auckland,701.60875,SR3,3.118261111111111
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Te Atatu--Distribution Centre Auckland,665.416875,SR3,2.9574083333333334
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Te Atatu South--Distribution Centre Auckland,624.42125,SR3,2.7752055555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Westgate--Distribution Centre Auckland,738.27,SR3,3.2812
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Kelston--Distribution Centre Auckland,784.1600000000001,SR3,3.485155555555556
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Lincoln Road--Distribution Centre Auckland,762.9300000000001,SR3,3.3908
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Lynfield--Distribution Centre Auckland,748.4,SR3,3.326222222222222
@@ -1967,35 +1955,27 @@ Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--C
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Northwest--Distribution Centre Auckland,742.875,SR3,3.3016666666666667
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Te Atatu--Distribution Centre Auckland,750.270625,SR3,3.334536111111111
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Te Atatu South--Distribution Centre Auckland,729.65125,SR3,3.2428944444444445
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Westgate--Distribution Centre Auckland,781.3287499999999,SR3,3.472572222222222
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland,640.225,SR3,2.8454444444444444
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland,558.020625,SR3,2.4800916666666666
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynmall--Distribution Centre Auckland,552.439375,SR3,2.4552861111111115
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Northwest--Distribution Centre Auckland,664.2587500000001,SR3,2.9522611111111114
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Te Atatu--Distribution Centre Auckland,628.066875,SR3,2.7914083333333335
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland,587.07125,SR3,2.6092055555555556
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Westgate--Distribution Centre Auckland,700.9200000000002,SR3,3.1152000000000006
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,661.540625,SR3,2.9401805555555556
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,670.840625,SR3,2.9815138888888892
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,681.875625,SR3,3.0305583333333335
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,663.411875,SR3,2.948497222222222
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,630.7256249999999,SR3,2.803225
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,718.5368749999999,SR3,3.1934972222222218
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,546.37625,SR3,2.428338888888889
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,649.680625,SR3,2.887469444444444
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,615.9862499999999,SR3,2.737716666666666
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,588.954375,SR3,2.617575
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,686.3425000000001,SR3,3.0504111111111114
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,645.0475,SR3,2.866877777777778
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,611.3525,SR3,2.717122222222222
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,584.320625,SR3,2.596980555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,681.70875,SR3,3.0298166666666666
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,674.4512499999998,SR3,2.9975611111111107
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,653.831875,SR3,2.9059194444444443
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,681.2106249999999,SR3,3.0276027777777776
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,616.3475,SR3,2.739322222222222
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,715.84,SR3,3.1815111111111114
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,684.5025,SR3,3.0422333333333333
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Kelston--Distribution Centre Auckland,852.284375,SR3,3.7879305555555556
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Lincoln Road--Distribution Centre Auckland,831.054375,SR3,3.693575
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Lynfield--Distribution Centre Auckland,816.5243750000001,SR3,3.6289972222222224
@@ -2003,121 +1983,84 @@ Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countd
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Northwest--Distribution Centre Auckland,810.999375,SR3,3.6044416666666668
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Te Atatu--Distribution Centre Auckland,818.395,SR3,3.637311111111111
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Te Atatu South--Distribution Centre Auckland,797.7756249999999,SR3,3.545669444444444
-Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Westgate--Distribution Centre Auckland,849.4531249999999,SR3,3.775347222222222
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland,740.4137499999999,SR3,3.2907277777777777
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland,658.209375,SR3,2.9253750000000003
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynmall--Distribution Centre Auckland,652.6281250000001,SR3,2.9005694444444448
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Northwest--Distribution Centre Auckland,764.4475000000001,SR3,3.3975444444444447
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Te Atatu--Distribution Centre Auckland,728.255625,SR3,3.2366916666666667
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland,687.2600000000001,SR3,3.0544888888888893
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Westgate--Distribution Centre Auckland,801.10875,SR3,3.5604833333333334
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,705.8775,SR3,3.1372333333333335
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,715.1775,SR3,3.1785666666666668
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,726.2125,SR3,3.227611111111111
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,707.74875,SR3,3.14555
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,675.0624999999999,SR3,3.0002777777777774
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,762.87375,SR3,3.3905499999999997
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,728.6906250000001,SR3,3.2386250000000003
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,831.995,SR3,3.6977555555555557
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,798.300625,SR3,3.5480027777777776
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,771.2687500000001,SR3,3.4278611111111115
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,868.656875,SR3,3.8606972222222224
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,772.86,SR3,3.4349333333333334
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,739.1649999999998,SR3,3.2851777777777773
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,712.1331250000001,SR3,3.165036111111111
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,809.5212500000001,SR3,3.5978722222222226
 Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,742.575625,SR3,3.3003361111111107
 Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,721.95625,SR3,3.2086944444444443
-Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,749.335,SR3,3.330377777777778
 Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,681.9743750000001,SR3,3.0309972222222226
-Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,781.466875,SR3,3.473186111111111
-Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,736.1662499999999,SR3,3.2718499999999997
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland,853.8468750000001,SR3,3.794875
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland,771.6425,SR3,3.4295222222222224
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Lynmall--Distribution Centre Auckland,766.0612500000001,SR3,3.404716666666667
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Northwest--Distribution Centre Auckland,877.880625,SR3,3.901691666666667
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Te Atatu--Distribution Centre Auckland,841.68875,SR3,3.740838888888889
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland,800.693125,SR3,3.5586361111111113
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Kelston--Countdown Westgate--Distribution Centre Auckland,917.7734027777777,SR3,4.0646305555555555
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,776.9531249999999,SR3,3.4531249999999996
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,786.253125,SR3,3.494458333333333
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,797.2881249999999,SR3,3.5435027777777774
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,778.8243749999999,SR3,3.461441666666666
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,746.1381249999998,SR3,3.316169444444444
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,833.9493750000001,SR3,3.706441666666667
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,786.3974999999999,SR3,3.4951
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,889.701875,SR3,3.9542305555555552
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,856.0074999999998,SR3,3.804477777777777
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,828.9756249999999,SR3,3.6843361111111106
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,932.222361111111,SR3,4.117172222222222
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,865.8725,SR3,3.848322222222222
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,832.1774999999999,SR3,3.6985666666666663
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,805.145625,SR3,3.5784249999999997
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,903.0968055555554,SR3,4.011261111111111
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,758.769375,SR3,3.3723083333333332
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,738.15,SR3,3.2806666666666664
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,765.5287500000001,SR3,3.40235
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,741.7556249999999,SR3,3.2966916666666664
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,841.248125,SR3,3.7388805555555553
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,816.32375,SR3,3.6281055555555555
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,695.8281249999999,SR3,3.092569444444444
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,705.128125,SR3,3.1339027777777777
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,716.163125,SR3,3.1829472222222224
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,697.6993749999999,SR3,3.1008861111111106
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,665.013125,SR3,2.9556138888888888
-Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,752.8243749999999,SR3,3.3458861111111107
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,637.598125,SR3,2.833769444444444
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,740.9025,SR3,3.2929000000000004
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,707.208125,SR3,3.1431472222222223
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,680.17625,SR3,3.0230055555555557
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,777.564375,SR3,3.4558416666666667
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,702.191875,SR3,3.1208527777777775
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,668.4968749999999,SR3,2.971097222222222
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,641.4649999999999,SR3,2.8509555555555552
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,738.8531249999999,SR3,3.283791666666666
 Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,721.733125,SR3,3.2077027777777776
 Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,701.1137499999999,SR3,3.1160611111111107
-Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,728.4925,SR3,3.237744444444444
 Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,661.1318749999999,SR3,2.9383638888888886
-Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,760.624375,SR3,3.380552777777778
-Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,715.32375,SR3,3.1792166666666666
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,699.5381249999999,SR3,3.109058333333333
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Northwest--Distribution Centre Auckland,802.8425,SR3,3.568188888888889
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,769.1481249999999,SR3,3.418436111111111
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,742.1162499999999,SR3,3.298294444444444
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Westgate--Distribution Centre Auckland,839.5043750000001,SR3,3.731130555555556
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,779.0131250000001,SR3,3.4622805555555556
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,745.3181249999999,SR3,3.3125249999999995
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,718.2862499999999,SR3,3.192383333333333
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,815.674375,SR3,3.6252194444444448
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,697.7699999999999,SR3,3.1011999999999995
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,677.1506249999999,SR3,3.0095583333333327
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,704.5293750000001,SR3,3.131241666666667
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,654.8968749999999,SR3,2.9106527777777775
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,754.3893750000001,SR3,3.352841666666667
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,717.398125,SR3,3.1884361111111112
 Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,675.798125,SR3,3.0035472222222226
 Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,642.103125,SR3,2.8537916666666665
 Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,615.07125,SR3,2.73365
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,712.459375,SR3,3.1664861111111113
 Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,686.824375,SR3,3.0525527777777777
 Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,666.2049999999999,SR3,2.960911111111111
-Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,693.58375,SR3,3.0825944444444446
 Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,628.720625,SR3,2.794313888888889
-Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,728.213125,SR3,3.2365027777777775
-Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,696.8762499999999,SR3,3.0972277777777775
 Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,695.505625,SR3,3.091136111111111
 Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,674.8862499999999,SR3,2.9994944444444442
-Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,702.2650000000001,SR3,3.121177777777778
 Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,637.4012499999999,SR3,2.832894444444444
-Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,736.89375,SR3,3.2750833333333333
-Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,705.5568750000001,SR3,3.1358083333333338
 Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,665.93625,SR3,2.9597166666666666
-Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,765.42875,SR3,3.4019055555555555
-Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,740.504375,SR3,3.2911305555555552
-Distribution Centre Auckland--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,703.0193750000001,SR3,3.124530555555556
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Hobsonville--Countdown Lynmall--Distribution Centre Auckland,949.4174999999999,SR3,4.1796999999999995
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Hobsonville--Countdown Northwest--Distribution Centre Auckland,931.2980555555554,SR3,4.113811111111111
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Hobsonville--Countdown Te Atatu South--Distribution Centre Auckland,915.1356944444443,SR3,4.055038888888888
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Kelston--Countdown Lincoln Road--Distribution Centre Auckland,855.021875,SR3,3.8000972222222225
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Kelston--Countdown Lynfield--Distribution Centre Auckland,772.8175,SR3,3.4347444444444446
@@ -2126,147 +2069,56 @@ Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Cou
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Kelston--Countdown Te Atatu South--Distribution Centre Auckland,801.8681250000001,SR3,3.5638583333333336
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,820.485625,SR3,3.646602777777778
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,829.7856250000001,SR3,3.6879361111111115
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,840.8206250000001,SR3,3.7369805555555557
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,822.356875,SR3,3.6549194444444444
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,789.670625,SR3,3.509647222222222
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,877.4818750000001,SR3,3.899919444444445
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,843.29875,SR3,3.7479944444444446
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,887.468125,SR3,3.9443027777777777
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,853.7731249999998,SR3,3.7945472222222216
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,826.7412499999999,SR3,3.674405555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,929.4914583333334,SR3,4.107241666666667
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,857.1837499999999,SR3,3.809705555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,836.5643749999998,SR3,3.718063888888888
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,863.943125,SR3,3.8397472222222224
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,796.5825,SR3,3.5403666666666664
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,896.0750000000002,SR3,3.9825555555555563
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Henderson--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,850.7743750000001,SR3,3.781219444444445
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,931.6968055555557,SR3,4.115261111111112
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,885.81875,SR3,3.9369722222222223
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,898.4499999999999,SR3,3.993111111111111
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,877.830625,SR3,3.9014694444444444
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,906.3670138888889,SR3,4.023152777777778
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Hobsonville--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,881.4362499999999,SR3,3.917494444444444
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Lynfield--Distribution Centre Auckland,793.9287499999999,SR3,3.528572222222222
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,803.22875,SR3,3.5699055555555557
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Northwest--Distribution Centre Auckland,814.26375,SR3,3.61895
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,795.8,SR3,3.5368888888888885
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,763.1137499999999,SR3,3.3916166666666663
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lincoln Road--Countdown Westgate--Distribution Centre Auckland,850.9250000000001,SR3,3.781888888888889
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,735.69875,SR3,3.2697722222222225
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynfield--Countdown Te Atatu--Distribution Centre Auckland,805.3087499999999,SR3,3.57915
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynfield--Countdown Te Atatu South--Distribution Centre Auckland,778.2768750000001,SR3,3.4590083333333337
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,800.2925,SR3,3.556855555555556
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,766.5975,SR3,3.4071
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,739.565625,SR3,3.286958333333333
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,836.9537500000001,SR3,3.719794444444445
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,819.83375,SR3,3.6437055555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,799.2143749999999,SR3,3.5520638888888887
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,826.5931250000002,SR3,3.673747222222223
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,759.2325,SR3,3.3743666666666665
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,858.725,SR3,3.8165555555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Kelston--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,813.4243750000002,SR3,3.615219444444445
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,839.2187500000001,SR3,3.7298611111111115
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,884.99875,SR3,3.9333277777777775
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,857.966875,SR3,3.813186111111111
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,837.450625,SR3,3.7220027777777775
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,816.83125,SR3,3.630361111111111
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,844.2100000000002,SR3,3.752044444444445
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,794.5774999999999,SR3,3.531455555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,894.0700000000002,SR3,3.973644444444445
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lincoln Road--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,857.0787500000002,SR3,3.8092388888888897
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,794.229375,SR3,3.529908333333333
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,760.5343750000001,SR3,3.380152777777778
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,733.5024999999999,SR3,3.260011111111111
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,830.8906249999999,SR3,3.692847222222222
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,805.255625,SR3,3.5789138888888887
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,784.63625,SR3,3.4872722222222223
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,812.015,SR3,3.6089555555555553
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,747.1518749999999,SR3,3.3206749999999996
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,846.6443750000001,SR3,3.762863888888889
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynfield--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,815.3075000000001,SR3,3.6235888888888894
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,800.6225,SR3,3.558322222222222
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,780.003125,SR3,3.4666805555555555
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,807.3818749999999,SR3,3.5883638888888885
 Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,742.5181249999999,SR3,3.3000805555555552
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,842.0106250000001,SR3,3.742269444444445
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,810.6737499999999,SR3,3.602994444444444
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,805.6168749999998,SR3,3.5805194444444437
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,880.185,SR3,3.9119333333333333
-Distribution Centre Auckland--Countdown Blockhouse Bay--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,842.700625,SR3,3.745336111111111
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,965.9304861111111,SR3,4.239747222222222
-Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,956.1672222222221,SR3,4.204244444444444
-Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,989.6301388888891,SR3,4.325927777777778
 Distribution Centre Auckland--Countdown Henderson--Countdown Hobsonville--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,960.5740972222221,SR3,4.220269444444444
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lincoln Road--Countdown Lynmall--Distribution Centre Auckland,904.1769444444444,SR3,4.015188888888889
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu--Distribution Centre Auckland,895.98875,SR3,3.9821722222222222
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu South--Distribution Centre Auckland,863.3025,SR3,3.8369
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,835.8875000000002,SR3,3.715055555555556
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Distribution Centre Auckland,900.5881944444445,SR3,4.002138888888889
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,866.7862500000001,SR3,3.852383333333334
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,839.7543750000001,SR3,3.732241666666667
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Lynmall--Countdown Westgate--Distribution Centre Auckland,945.3963888888891,SR3,4.165077777777778
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,899.4031250000002,SR3,3.997347222222223
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,932.7334027777779,SR3,4.119030555555556
 Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,859.4212500000001,SR3,3.81965
-Distribution Centre Auckland--Countdown Henderson--Countdown Kelston--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,916.6382638888891,SR3,4.060502777777779
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Lynfield--Countdown Lynmall--Distribution Centre Auckland,883.5556250000001,SR3,3.9269138888888895
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,935.8546527777779,SR3,4.130380555555556
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,902.8156944444445,SR3,4.010238888888889
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,881.7874999999999,SR3,3.919055555555555
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,861.168125,SR3,3.827413888888889
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,888.546875,SR3,3.949097222222222
 Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,838.914375,SR3,3.728508333333333
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,946.9417361111111,SR3,4.1706972222222225
-Distribution Centre Auckland--Countdown Henderson--Countdown Lincoln Road--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,901.7302083333334,SR3,4.006291666666667
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,919.331736111111,SR3,4.070297222222222
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,934.7538888888889,SR3,4.126377777777778
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,909.5524305555556,SR3,4.034736111111111
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,943.0153472222222,SR3,4.1564194444444444
 Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,870.3306249999999,SR3,3.8681361111111108
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,985.3393750000001,SR3,4.310325000000001
-Distribution Centre Auckland--Countdown Henderson--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,947.03875,SR3,4.17105
-Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,873.7412499999999,SR3,3.883294444444444
-Distribution Centre Auckland--Countdown Henderson--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,959.0447916666667,SR3,4.214708333333333
-Distribution Centre Auckland--Countdown Henderson--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,910.1780555555558,SR3,4.037011111111112
 Distribution Centre Auckland--Countdown Hobsonville--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,912.2099999999999,SR3,4.0443999999999996
-Distribution Centre Auckland--Countdown Hobsonville--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,889.935,SR3,3.9552666666666663
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,892.254375,SR3,3.965575
-Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,871.738125,SR3,3.8743916666666665
-Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,851.1187499999999,SR3,3.7827499999999996
-Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,878.4975000000002,SR3,3.904433333333334
 Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,828.8649999999999,SR3,3.683844444444444
-Distribution Centre Auckland--Countdown Kelston--Countdown Lincoln Road--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,891.36625,SR3,3.961627777777778
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu--Distribution Centre Auckland,851.75625,SR3,3.7855833333333333
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,824.7243749999999,SR3,3.6654416666666663
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynfield--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,838.37375,SR3,3.7261055555555553
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,857.7668749999998,SR3,3.8122972222222216
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,837.1474999999999,SR3,3.720655555555555
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,864.5262499999999,SR3,3.8423388888888885
 Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,799.6624999999999,SR3,3.5540555555555553
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,899.1550000000001,SR3,3.9962444444444447
-Distribution Centre Auckland--Countdown Kelston--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,867.8181249999999,SR3,3.8569694444444442
-Distribution Centre Auckland--Countdown Kelston--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,852.89875,SR3,3.790661111111111
-Distribution Centre Auckland--Countdown Kelston--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,887.485,SR3,3.944377777777778
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Distribution Centre Auckland,886.664375,SR3,3.940730555555555
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,917.0729166666665,SR3,4.062083333333333
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,950.5358333333335,SR3,4.183766666666667
 Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,876.4837499999999,SR3,3.8954833333333325
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,954.5592361111112,SR3,4.198397222222223
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,828.935625,SR3,3.684158333333333
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,904.282361111111,SR3,4.015572222222222
-Distribution Centre Auckland--Countdown Lincoln Road--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,881.25,SR3,3.9166666666666665
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Distribution Centre Auckland,831.373125,SR3,3.6949916666666667
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Distribution Centre Auckland,810.7537500000001,SR3,3.6033500000000003
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Northwest--Countdown Westgate--Distribution Centre Auckland,838.1325,SR3,3.7250333333333336
 Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,773.2687499999998,SR3,3.4367499999999995
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,872.76125,SR3,3.878938888888889
-Distribution Centre Auckland--Countdown Lynfield--Countdown Lynmall--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,841.424375,SR3,3.7396638888888893
-Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,817.99,SR3,3.635511111111111
-Distribution Centre Auckland--Countdown Lynfield--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,892.5581250000001,SR3,3.9669250000000007
-Distribution Centre Auckland--Countdown Lynfield--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,855.0737500000001,SR3,3.8003277777777784
-Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Distribution Centre Auckland,826.6712499999999,SR3,3.674094444444444
-Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu--Countdown Westgate--Distribution Centre Auckland,931.9779166666667,SR3,4.1162833333333335
-Distribution Centre Auckland--Countdown Lynmall--Countdown Northwest--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,901.5147916666668,SR3,4.005508333333334
-Distribution Centre Auckland--Countdown Lynmall--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,863.754375,SR3,3.8389083333333334
-Distribution Centre Auckland--Countdown Northwest--Countdown Te Atatu--Countdown Te Atatu South--Countdown Westgate--Distribution Centre Auckland,892.2893750000002,SR3,3.9657305555555564
