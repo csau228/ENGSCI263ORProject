@@ -155,26 +155,34 @@ def main():
 
 def generateFiles(ExcelFile):
     
-    xls = pd.ExcelFile(ExcelFile)
+    xls = pd.ExcelFile(ExcelFile)   # Read excel file into pd
 
     suffix = 'TravelDuration' if 'Travel' in ExcelFile else 'Demand'
 
-    header = ['Average Demands', 'Mon to Fri', 'Sat', 'Zone']
+    header = ['Average Demands', 'Mon to Fri', 'Sat', 'Zone']   # Header to write into demand csv file
 
     filenames = []
 
+    # Get names of sheets in excel book
     for i in range(len(xls.sheet_names)):
         filename = xls.sheet_names[i].split(" ")
         filenames.append(''.join(filename[:-1])+ suffix +'.csv')
 
+    # Copy each sheet in excel book into a new csv file
     for i in range(len(filenames)):
         
+        # Read sheet into dataframe
         df = pd.read_excel(xls, i)
+
+        # Open new csv file to store dataframe above
         file = open(filenames[i], 'w', newline='')
         writer = csv.writer(file)
+        
+        # Write header into csv file
         if 'Demand' in filenames[i]:
             writer.writerow(header) 
         
+        # 
         for j in range(len(df)):
             writer.writerow(df.iloc[j])
 
@@ -438,8 +446,10 @@ def LinearProgram(routefile, demandfile):
     print("Total Cost of Routes = ", value(prob.objective))
 
 
-    with open("OptimalCost.txt", mode="a", encoding="utf-8") as myFile:
-        myFile.write("Optimal Cost ({}): ".format(day) + str(value(prob.objective)) + "                " + demandfile[:-4] + "Removed" + "\n")
+    # Write optimal cost information into file
+    # Uncomment when modelling store closure scenarios
+    # with open("OptimalCost.txt", mode="a", encoding="utf-8") as myFile:
+    #     myFile.write("Optimal Cost ({}): ".format(day) + str(value(prob.objective)) + "                " + demandfile[:-4] + "Removed" + "\n")
 
     vars_to_use = []
     for v in prob.variables():
