@@ -39,7 +39,7 @@ def main2():
         rS = LinearProgram("SatRoutes.csv", demandFileName)
 
 def main():
-    PlotStores() # plots the stores on a map
+    #PlotStores() # plots the stores on a map
     
     mean = []
     total = []
@@ -689,5 +689,5 @@ class Network(object):
 
 
 if __name__ == "__main__":
-    #main()
-	main2()
+    main()
+	#main2()
