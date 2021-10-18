@@ -7,3 +7,4 @@
 - png files: plots and figures used for reports and deliverables
 - lp files: generated from linear program function
 - csv and excel files: used for data transfer and writing outputs
+- Folders contain relevant images and plots generated and used by team members
